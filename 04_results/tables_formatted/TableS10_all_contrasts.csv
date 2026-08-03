@@ -1,0 +1,31 @@
+Response,Environmental axis,Endotherm mean,Ectotherm mean,Contrast ± SE,t,P,P (BH-adjusted)
+SES.habitat_breadth.var,Habitat structure,0.0342,0.0821,0.048 ± 0.014,3.437,0.002,0.056
+SES.FDis,Productivity,0.0494,0.1286,0.079 ± 0.027,2.946,0.006,0.128
+SES.RaoQ,Productivity,0.0594,0.1346,0.075 ± 0.027,2.76,0.010,0.151
+SES.body_mass.var,Productivity,0.0837,0.2027,0.119 ± 0.045,2.62,0.014,0.169
+SES.habitat_breadth.var,Productivity,0.0657,0.1372,0.071 ± 0.030,2.353,0.026,0.259
+SES.habitat_breadth.mean,Human pressure,0.0367,0.0939,0.059 ± 0.030,1.967,0.059,0.387
+SES.habitat_breadth.mean,Habitat structure,0.0416,0.0772,0.036 ± 0.018,1.963,0.060,0.387
+SES.habitat_breadth.mean,Thermal energy,0.1783,0.3031,0.125 ± 0.065,1.924,0.065,0.387
+SES.body_mass.var,Human pressure,0.0382,0.0768,0.039 ± 0.022,1.788,0.085,0.397
+SES.body_mass.var,Thermal energy,0.229,0.4289,0.200 ± 0.121,1.65,0.110,0.472
+SES.body_mass.mean,Habitat structure,0.042,0.0687,0.027 ± 0.017,1.562,0.129,0.498
+SES.body_mass.mean,Human pressure,0.0463,0.078,0.032 ± 0.021,1.523,0.139,0.498
+SES.body_mass.mean,Productivity,0.0582,0.1069,0.049 ± 0.033,1.462,0.155,0.498
+SES.habitat_breadth.mean,Water availability,0.1369,0.242,0.105 ± 0.073,1.431,0.163,0.498
+SES.body_mass.var,Habitat structure,0.0288,0.0447,0.016 ± 0.012,1.364,0.184,0.498
+SES.FDis,Thermal energy,0.1561,0.2742,0.118 ± 0.087,1.354,0.187,0.498
+SES.RaoQ,Thermal energy,0.1644,0.2983,0.134 ± 0.100,1.341,0.191,0.498
+SES.habitat_breadth.var,Human pressure,0.0313,0.0732,0.047 ± 0.036,1.29,0.208,0.499
+SES.habitat_breadth.mean,Productivity,0.0696,0.1406,0.088 ± 0.074,1.181,0.247,0.550
+SES.body_mass.mean,Water availability,0.1415,0.2323,0.103 ± 0.105,0.983,0.334,0.668
+SES.RaoQ,Habitat structure,0.0368,0.0562,0.017 ± 0.018,0.936,0.358,0.670
+SES.FDis,Habitat structure,0.0382,0.0541,0.015 ± 0.019,0.794,0.434,0.670
+SES.body_mass.var,Water availability,0.1642,0.2364,0.081 ± 0.107,0.762,0.452,0.670
+SES.FDis,Water availability,0.16,0.2111,0.072 ± 0.098,0.736,0.468,0.670
+SES.habitat_breadth.var,Thermal energy,0.2355,0.2887,0.053 ± 0.075,0.706,0.486,0.670
+SES.RaoQ,Human pressure,0.0356,0.0607,0.022 ± 0.032,0.685,0.499,0.670
+SES.FDis,Human pressure,0.0376,0.0579,0.019 ± 0.029,0.667,0.510,0.670
+SES.RaoQ,Water availability,0.1667,0.2211,0.075 ± 0.130,0.576,0.570,0.683
+SES.habitat_breadth.var,Water availability,0.1876,0.1806,0.002 ± 0.095,0.024,0.981,0.985
+SES.body_mass.mean,Thermal energy,0.186,0.469,0.283 ± 0.075,3.777,7.6e-04,0.046

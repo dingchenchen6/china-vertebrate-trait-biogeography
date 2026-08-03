@@ -1,0 +1,19 @@
+class,dom_trait,n,pct,trait_f,class_f
+Aves,Body mass,151,4.00318133616119,Body mass,Birds
+Aves,Body length,58,1.53764581124072,Body length,Birds
+Aves,Nocturnality,27,0.715800636267232,Nocturnality,Birds
+Aves,Verticality,1449,38.4146341463415,Verticality,Birds
+Aves,Habitat breadth,132,3.49946977730647,Habitat breadth,Birds
+Aves,Range size,1955,51.8292682926829,Range size,Birds
+Mammalia,Body mass,161,4.25700687466949,Body mass,Mammals
+Mammalia,Body length,779,20.597567424643,Body length,Mammals
+Mammalia,Nocturnality,74,1.95663670015865,Nocturnality,Mammals
+Mammalia,Verticality,1419,37.5198307773665,Verticality,Mammals
+Mammalia,Habitat breadth,80,2.11528291909043,Habitat breadth,Mammals
+Mammalia,Range size,1269,33.5536753040719,Range size,Mammals
+Reptilia,Body mass,166,5.19399249061327,Body mass,Reptiles
+Reptilia,Body length,1102,34.4806007509387,Body length,Reptiles
+Reptilia,Nocturnality,386,12.0775969962453,Nocturnality,Reptiles
+Reptilia,Verticality,185,5.78848560700876,Verticality,Reptiles
+Reptilia,Habitat breadth,1182,36.9837296620776,Habitat breadth,Reptiles
+Reptilia,Range size,175,5.4755944931164,Range size,Reptiles

@@ -1,0 +1,4 @@
+source,mean_abs_effect_Ectotherm,mean_abs_effect_Endotherm,n_models_Ectotherm,n_models_Endotherm,ratio_ecto_endo
+Occurrence + coverage,0.207562157298657,0.194712019170822,8,8,1.06599560819387
+Range map,0.0227096106525902,0.00863695269619625,8,8,2.62935452484204
+"Range map, same cells",0.168712669419703,0.0292568634314193,8,8,5.76660139304339

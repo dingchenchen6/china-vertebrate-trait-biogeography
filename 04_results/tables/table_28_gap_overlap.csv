@@ -1,0 +1,10 @@
+x,y,jaccard
+Aves,Aves,
+Mammalia,Aves,0.314950980392157
+Reptilia,Aves,0.182403433476395
+Aves,Mammalia,0.314950980392157
+Mammalia,Mammalia,
+Reptilia,Mammalia,0.238041002277904
+Aves,Reptilia,0.182403433476395
+Mammalia,Reptilia,0.238041002277904
+Reptilia,Reptilia,

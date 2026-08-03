@@ -1,0 +1,19 @@
+class,trait,r,trait_f
+Aves,body_mass,0.630553644286338,Body mass
+Aves,body_length,0.446362476904735,Body length
+Aves,nocturnality,0.999948487064168,Nocturnality
+Aves,verticality,0.994039449600736,Verticality
+Aves,habitat_breadth,0.821475232773799,Habitat breadth
+Aves,range_size,-0.75902302660828,Range size
+Mammalia,body_mass,0.588829156908827,Body mass
+Mammalia,body_length,0.256634661598286,Body length
+Mammalia,nocturnality,0.359185505191045,Nocturnality
+Mammalia,verticality,0.850920003743887,Verticality
+Mammalia,habitat_breadth,0.13740912066032,Habitat breadth
+Mammalia,range_size,-0.572351964653414,Range size
+Reptilia,body_mass,0.240995514646223,Body mass
+Reptilia,body_length,-0.180892529969784,Body length
+Reptilia,nocturnality,0.750015883992252,Nocturnality
+Reptilia,verticality,0.857239343315522,Verticality
+Reptilia,habitat_breadth,0.535215946089714,Habitat breadth
+Reptilia,range_size,-0.744917754141913,Range size

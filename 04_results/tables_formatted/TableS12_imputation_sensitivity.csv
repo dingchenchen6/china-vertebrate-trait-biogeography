@@ -1,0 +1,5 @@
+Class,"Species, all (n)",Species with fully observed core traits (n),Retained (%),"Mean SES, all species","Mean SES, observed traits only","Cells, observed-only analysis (n)"
+Birds,1086,917,84.4,-1.67,-1.73,3772
+Mammals,599,505,84.3,-1.26,-1.06,3783
+Reptiles,472,382,80.9,-1.92,-1.77,3177
+Amphibians,438,69,15.8,+1.85,-0.35,1653

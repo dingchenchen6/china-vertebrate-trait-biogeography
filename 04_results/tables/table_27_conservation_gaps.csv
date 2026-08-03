@@ -1,0 +1,4 @@
+class,n_cells,n_gap,pct_gap,mean_pa_frac_gap,mean_pa_frac_all
+Aves,3772,544,14.4,0,0.1031
+Mammalia,3782,529,14,0,0.1031
+Reptilia,3606,558,15.5,0,0.077

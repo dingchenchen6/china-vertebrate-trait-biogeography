@@ -1,0 +1,25 @@
+Class,Trait,Correlation with PCo1,Correlation with PCo2
+Birds,Body mass,-0.734,-0.601
+Birds,Body length,-0.694,-0.643
+Birds,Nocturnality,-0.241,-0.111
+Birds,Verticality,0.835,-0.486
+Birds,Habitat breadth,-0.403,0.022
+Birds,Range size,-0.337,-0.161
+Mammals,Body mass,-0.804,-0.06
+Mammals,Body length,-0.834,-0.047
+Mammals,Nocturnality,0.713,0.527
+Mammals,Verticality,0.586,-0.39
+Mammals,Habitat breadth,-0.328,0.658
+Mammals,Range size,-0.255,0.539
+Reptiles,Body mass,0.305,0.742
+Reptiles,Body length,0.509,0.716
+Reptiles,Nocturnality,0.957,-0.228
+Reptiles,Verticality,-0.048,-0.149
+Reptiles,Habitat breadth,-0.019,0.579
+Reptiles,Range size,-0.017,0.623
+Amphibians,Body mass,-0.611,-0.501
+Amphibians,Body length,-0.584,-0.623
+Amphibians,Nocturnality,0.671,-0.195
+Amphibians,Verticality,0.496,0.363
+Amphibians,Habitat breadth,-0.43,0.639
+Amphibians,Range size,-0.513,0.582

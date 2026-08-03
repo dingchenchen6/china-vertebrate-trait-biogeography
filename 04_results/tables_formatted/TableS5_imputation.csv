@@ -1,0 +1,45 @@
+Class,Trait,Species (n),Missing before imputation (%),Used in main analysis,missForest OOB NRMSE
+Amphibians,Body length,438,0,yes,0
+Amphibians,Body mass,438,0,yes,0
+Amphibians,Diet breadth,438,67.8,no,0
+Amphibians,Habitat breadth,438,0,yes,0
+Amphibians,Litter/clutch size,438,61.9,no,0
+Amphibians,Maximum longevity,438,81.5,no,0
+Amphibians,Nocturnality,438,0,yes,0
+Amphibians,Plant diet,438,67.6,no,0
+Amphibians,Range size,438,0,yes,0
+Amphibians,Vertebrate diet,438,67.6,no,0
+Amphibians,Verticality,438,0,yes,0
+Birds,Body length,1086,0,yes,0.0092
+Birds,Body mass,1086,0,yes,0.0092
+Birds,Diet breadth,1086,2.9,yes,0.0092
+Birds,Habitat breadth,1086,0,yes,0.0092
+Birds,Litter/clutch size,1086,15.8,yes,0.0092
+Birds,Maximum longevity,1086,66.7,no,0.0092
+Birds,Nocturnality,1086,0,yes,0.0092
+Birds,Plant diet,1086,2.9,yes,0.0092
+Birds,Range size,1086,0,yes,0.0092
+Birds,Vertebrate diet,1086,2.9,yes,0.0092
+Birds,Verticality,1086,0,yes,0.0092
+Mammals,Body length,599,0,yes,0.008
+Mammals,Body mass,599,0,yes,0.008
+Mammals,Diet breadth,599,16.5,yes,0.008
+Mammals,Habitat breadth,599,0,yes,0.008
+Mammals,Litter/clutch size,599,34.4,yes,0.008
+Mammals,Maximum longevity,599,45.4,no,0.008
+Mammals,Nocturnality,599,0,yes,0.008
+Mammals,Plant diet,599,16.5,yes,0.008
+Mammals,Range size,599,0,yes,0.008
+Mammals,Vertebrate diet,599,16.5,yes,0.008
+Mammals,Verticality,599,0,yes,0.008
+Reptiles,Body length,472,0,yes,0.005
+Reptiles,Body mass,472,0,yes,0.005
+Reptiles,Diet breadth,472,15,yes,0.005
+Reptiles,Habitat breadth,472,0,yes,0.005
+Reptiles,Litter/clutch size,472,26.5,yes,0.005
+Reptiles,Maximum longevity,472,71.4,no,0.005
+Reptiles,Nocturnality,472,0,yes,0.005
+Reptiles,Plant diet,472,15,yes,0.005
+Reptiles,Range size,472,0,yes,0.005
+Reptiles,Vertebrate diet,472,15,yes,0.005
+Reptiles,Verticality,472,0,yes,0.005

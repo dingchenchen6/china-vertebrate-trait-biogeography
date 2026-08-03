@@ -1,0 +1,7 @@
+class,grain,n_species,n_cells_occupied,n_cells_total,mean_richness,max_richness,n_records
+Amphibia,50km,509,3222,3814,11.6,72,37261
+Amphibia,100km,459,840,957,13,75,10923
+Reptilia,50km,520,3696,3814,24.6,132,90995
+Reptilia,100km,508,938,957,27.2,139,25507
+Mammalia,50km,631,3783,3814,52.7,170,199454
+Mammalia,100km,624,951,957,58.3,187,55473

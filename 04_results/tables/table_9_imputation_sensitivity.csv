@@ -1,0 +1,5 @@
+class,n_species_all,n_species_observed_only,pct_species_retained,mean_SES_all,mean_SES_observed_only,pct_positive_all,pct_positive_observed_only,n_cells_observed_only
+Aves,1086,917,84.4,-1.67,-1.73,10.7,4.6,3772
+Mammalia,599,505,84.3,-1.26,-1.06,13.2,21.6,3783
+Reptilia,472,382,80.9,-1.92,-1.77,3.9,3.2,3177
+Amphibia,438,69,15.8,1.85,-0.35,96.7,36.5,1653

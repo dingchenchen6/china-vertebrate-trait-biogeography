@@ -1,0 +1,5 @@
+class,grain,n_species,n_cells_occupied,n_cells_total,mean_richness,max_richness,n_records
+Aves,50km,1177,3772,3814,146.3,456,551826
+Aves,100km,1159,950,957,146,437,138718
+Reptilia,50km,189,3781,3814,10.2,44,38514
+Reptilia,100km,183,950,957,11.1,43,10564

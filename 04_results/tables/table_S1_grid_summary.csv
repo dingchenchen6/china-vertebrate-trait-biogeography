@@ -1,0 +1,3 @@
+grain,n_cells,n_analysable,cell_area_km2,total_land_km2,mean_land_frac,n_provinces
+50km,3814,3782,2500,9379021,0.984,32
+100km,957,950,10000,9264938,0.968,32

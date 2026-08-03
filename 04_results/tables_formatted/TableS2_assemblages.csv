@@ -1,0 +1,9 @@
+Class,Grain,Species (n),Occupied cells (n),Total cells (n),Mean richness,Maximum richness,Species-cell records (n)
+Amphibians,50km,509,3222,3814,11.6,72,37261
+Amphibians,100km,459,840,957,13,75,10923
+Birds,50km,1177,3772,3814,146.3,456,551826
+Birds,100km,1159,950,957,146,437,138718
+Mammals,50km,631,3783,3814,52.7,170,199454
+Mammals,100km,624,951,957,58.3,187,55473
+Reptiles,50km,520,3696,3814,24.6,132,90995
+Reptiles,100km,508,938,957,27.2,139,25507

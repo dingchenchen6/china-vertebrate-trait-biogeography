@@ -1,0 +1,9 @@
+class,grain,n_tests,sig_naive,sig_maxtest,pct_naive,pct_maxtest,inflation_ratio
+Amphibia,100km,60,49,18,81.7,30,2.72
+Amphibia,50km,60,49,19,81.7,31.7,2.58
+Aves,100km,100,92,72,92,72,1.28
+Aves,50km,100,94,74,94,74,1.27
+Mammalia,100km,100,95,69,95,69,1.38
+Mammalia,50km,100,94,60,94,60,1.57
+Reptilia,100km,100,92,36,92,36,2.56
+Reptilia,50km,100,92,38,92,38,2.42

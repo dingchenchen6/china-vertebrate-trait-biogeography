@@ -1,0 +1,5 @@
+Class,Thermoregulatory mode,Species (n),Traits analysed (n),Occupied cells (n),Cells analysed (n),Mean richness per cell,Maximum richness,Mean SES of functional dispersion
+Birds,Endotherm,1177,10,3772,3772,146.3,456,-0.83
+Mammals,Endotherm,631,10,3783,3783,52.7,170,-0.90
+Reptiles,Ectotherm,520,10,3696,3634,24.6,132,-1.12
+Amphibians,Ectotherm,509,6,3222,2619,11.6,72,+0.08
