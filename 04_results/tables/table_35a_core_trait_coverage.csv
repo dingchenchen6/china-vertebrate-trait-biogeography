@@ -1,0 +1,5 @@
+class,size,litter_size,generation_length,nocturnality,verticality,habitat_breadth,range_size
+Amphibia,100,46.3,0,100,100,100,100
+Aves,100,100,80.8,100,100,100,100
+Mammalia,100,100,92.2,100,100,100,100
+Reptilia,100,100,0,100,100,100,100

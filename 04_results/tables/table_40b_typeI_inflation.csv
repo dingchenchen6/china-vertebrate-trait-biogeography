@@ -1,0 +1,5 @@
+class,thermal,n_tests,sig_naive,sig_maxtest,pct_naive,pct_maxtest,inflation
+Amphibia,Ectotherm,54,48,31,88.9,57.4,1.55
+Aves,Endotherm,54,52,41,96.3,75.9,1.27
+Mammalia,Endotherm,54,53,39,98.1,72.2,1.36
+Reptilia,Ectotherm,54,50,29,92.6,53.7,1.72

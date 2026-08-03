@@ -1,0 +1,5 @@
+scenario,pct_species_meeting_30,pct_bins_meeting_30,median_protection
+Current reserve network,2.9,1.5,4.6
+30% by species complementarity,86.4,92.3,40.6
+30% by trait-space complementarity,81.9,92.2,50.3
+30% by richness ranking,77.1,85.8,94.4

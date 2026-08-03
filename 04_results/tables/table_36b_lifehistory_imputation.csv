@@ -1,0 +1,5 @@
+class,OOB_NRMSE,traits_imputed
+Reptilia,0.4128,"fecundity, longevity, litters_per_year, body_temp"
+Amphibia,0.2701,"fecundity, longevity, maturity"
+Aves,0.0326,"fecundity, longevity, generation_length"
+Mammalia,0.058,"fecundity, longevity, generation_length"

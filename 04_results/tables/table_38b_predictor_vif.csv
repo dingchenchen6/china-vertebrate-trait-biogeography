@@ -1,0 +1,7 @@
+variable,hypothesis,VIF
+bio1_mean,Ambient energy,2.34
+bio12_mean,Water availability,5.36
+npp,Productivity,4.43
+elev_range,Habitat heterogeneity,1.63
+bio4_mean,Climatic seasonality,2.63
+hfp2020,Human pressure,2.32

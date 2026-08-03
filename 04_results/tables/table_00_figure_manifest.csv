@@ -1,0 +1,30 @@
+panel,num,src,title,found,question
+Main,Fig1,Fig1_framework_and_data,"Study design, trait coverage and the assemblage framework",TRUE,Framework
+Main,Fig2,Fig2_functional_axes,Three a priori functional axes and their independence,TRUE,Q1 Dimensions: is assemblage trait structure one axis or several?
+Main,Fig3,Fig2_CWM_maps,Geography of assemblage trait means across China,TRUE,Q1 Dimensions: is assemblage trait structure one axis or several?
+Main,Fig4,Fig4_hypothesis_drivers,Which biodiversity hypothesis drives assemblage trait structure,TRUE,"Q2 Drivers: which hypothesis governs it, and does thermoregulation decide?"
+Main,Fig5,Fig5_fourth_corner,Fourth-corner max test of trait-environment links,TRUE,"Q2 Drivers: which hypothesis governs it, and does thermoregulation decide?"
+Main,Fig6,Fig4_thermal_mode_asymmetry,Endotherms and ectotherms differ in trait-environment coupling,TRUE,"Q2 Drivers: which hypothesis governs it, and does thermoregulation decide?"
+Main,Fig7,Fig9_functional_regionalisation,No single class is a reliable surrogate: functional regions and redundancy differ,TRUE,Q3 Design: what does trait structure require of conservation planning?
+Main,Fig8,Fig6_prioritisation,"Conservation design: complementarity, under-protected traits and 30x30",TRUE,Q3 Design: what does trait structure require of conservation planning?
+Extended Data,ED1,ED1_trait_coverage_imputation,Trait coverage before and after imputation,TRUE,
+Extended Data,ED2,ED2_trait_space_pcoa,Trait space and its principal coordinates,TRUE,
+Extended Data,ED3,ED3_environmental_axes,Environmental predictors and their axes,TRUE,
+Extended Data,ED4,ED4_spatial_model_diagnostics,Spatial model diagnostics,TRUE,
+Extended Data,ED5,ED5_effect_heatmap_all,Full trait-by-predictor effect matrix,TRUE,
+Extended Data,ED6,ED6_fourthcorner_typeI,Type I error inflation of naive CWM regression,TRUE,
+Extended Data,ED7,ED7_grain_robustness_100km,Robustness to grain: 100 km results,TRUE,
+Extended Data,ED8,ED8_null_model_behaviour,Null-model behaviour under occupancy weighting,TRUE,
+Extended Data,ED9,ED9_robustness_checks,Additional robustness checks,TRUE,
+Extended Data,ED10,Fig3_SES_functional_diversity,Standardised effect sizes of functional diversity,TRUE,
+Extended Data,ED11,Fig5_anthropogenic_filter,The anthropogenic filter on assemblage traits,TRUE,
+Extended Data,ED12,Fig6_scale_and_congruence,Grain sensitivity and cross-class congruence,TRUE,
+Extended Data,ED13,Fig7_trait_variance_geography,Geography of assemblage trait variance,TRUE,
+Extended Data,ED14,Fig8_dominant_filtered_trait,"Which trait is most strongly filtered, mapped",TRUE,
+Extended Data,ED15,Fig10_geographically_weighted_coupling,Geographically weighted trait-environment coupling,TRUE,
+Extended Data,ED16,Fig11_functional_beta,Functional beta diversity and its turnover component,TRUE,
+Extended Data,ED17,Fig12_occurrence_vs_rangemap,Occurrence records versus expert range maps,TRUE,
+Extended Data,ED18,Fig13_occurrence_four_classes,Occurrence-based assemblages for all four classes,TRUE,
+Extended Data,ED19,Fig14_conservation_gaps,Conservation gaps and reserve representation,TRUE,
+Extended Data,ED20,Fig15_sexual_dimorphism,Sexual size dimorphism across assemblages,TRUE,
+Extended Data,ED21,Fig2_trait_axes,Data-driven trait axes retained as a check on the a priori axes,TRUE,

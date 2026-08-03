@@ -21,6 +21,15 @@
 03_data_derived/traits_china_raw.rds
 03_data_derived/traits_imputed.rds
 03_data_derived/amphibian_observed_traits.rds
+# 物种级性状与功能轴分数：含由 IUCN 分布图导出的 range_size，
+# 与 traits_imputed.rds 同属物种级衍生数据，按同一政策不入库。
+# 全部可由 01_code/03*.R 从公开来源重建。
+# Species-level trait and axis tables carry an IUCN-derived range_size and are
+# excluded under the same policy; all are rebuilt by 01_code/03*.R.
+03_data_derived/traits_core.rds
+03_data_derived/traits_lifehistory.rds
+03_data_derived/trait_axes_species.rds
+03_data_derived/functional_axes_species.rds
 
 # ---- 中间缓存：可由代码重建 -------------------------------------
 # Caches: fully reproducible from the code
