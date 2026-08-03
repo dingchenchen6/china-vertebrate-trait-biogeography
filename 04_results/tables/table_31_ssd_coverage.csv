@@ -1,0 +1,4 @@
+class,n_in_dataset,n_analysed,n_matched,pct,mean_ssd,pct_female_larger
+Amphibia,472,509,319,62.7,0.0563,81.4
+Reptilia,117,520,83,16,0.0091,55.6
+Aves,1292,1177,1110,94.3,-0.0082,29.6

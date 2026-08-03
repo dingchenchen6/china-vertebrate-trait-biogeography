@@ -1,10 +1,10 @@
 class,trait,n_species,pct_global_observed,pct_china_dataset,pct_union,gain_pp
-Amphibia,body_length,438,99.3,24.7,99.5,0.2
+Amphibia,body_length,438,99.3,74.2,99.8,0.5
 Amphibia,nocturnality,438,29.2,27.2,44.5,15.3
 Amphibia,verticality,438,88.6,73.3,94.7,6.2
 Amphibia,habitat_breadth,438,97,0,97,0
 Amphibia,body_mass,438,25.3,0,25.3,0
-Amphibia,litter_size,438,38.1,15.1,41.1,3
+Amphibia,litter_size,438,38.1,37.7,46.3,8.2
 Reptilia,body_length,472,99.8,32.8,100,0.2
 Reptilia,nocturnality,472,83.3,30.9,83.5,0.2
 Reptilia,verticality,472,97.5,15.5,97.5,0
@@ -17,3 +17,9 @@ Aves,verticality,1086,99.3,0,99.3,0
 Aves,habitat_breadth,1086,99.8,0,99.8,0
 Aves,body_mass,1086,97.1,96.6,99.8,2.7
 Aves,litter_size,1086,100,90.7,100,0
+Mammalia,body_length,599,91.5,80.6,97.3,5.8
+Mammalia,nocturnality,599,92.7,68.6,98,5.3
+Mammalia,verticality,599,96.2,0,96.2,0
+Mammalia,habitat_breadth,599,98.5,85.5,99.7,1.2
+Mammalia,body_mass,599,94.2,65.3,98.2,4
+Mammalia,litter_size,599,100,82.8,100,0
