@@ -45,6 +45,21 @@ reasons; every item is documented here so the analysis can be reproduced in full
 | **Human Footprint** | Mu et al. 2022 | 人类压力（2000–2020） | figshare |
 | **GBIF 出现记录** | 2000–2025，中国 | 观测群落（鸟 458 万、两栖 10.2 万、兽 7.0 万、爬行 3.5 万） | 由 `01_code/11a_gbif_download.py` 经 GBIF API 自动下载 |
 
+**中国本土性状数据集**（王彦平团队，《生物多样性》，开放获取）
+
+| 数据集 | 引用 | DOI | 备注 |
+|---|---|---|---|
+| 中国两栖动物生活史与生态学特征 | Song, Chen & Wang 2022 | [10.17520/biods.2022053](https://doi.org/10.17520/biods.2022053) | 591 种；补上活动节律 +15.3 pp |
+| 中国蜥蜴生活史与生态学特征 | Zhong, Chen & Wang 2022 | [10.17520/biods.2022071](https://doi.org/10.17520/biods.2022071) | 226 种；含体重与栖息地宽度 |
+| 中国鸟类生活史与生态学特征 | Wang, Song & Zhong 2021 | [10.17520/biods.2021201](https://doi.org/10.17520/biods.2021201) | 1,483 种；补上体长 +12.5 pp |
+| 中国蛇类形态/生活史/生态学特征 | Wang J. et al. 2023 | [10.17520/biods.2023126](https://doi.org/10.17520/biods.2023126) | **未取得**，期刊站点限流；爬行类全球库覆盖已 83–100%，不影响结论 |
+
+附件下载模式：`https://www.biodiversity-science.net/fileup/1005-0094/DATA/<文章编号>.zip`
+（压缩包内文件名为 GBK 编码，`unzip` 会报「Illegal byte sequence」，需用 Python 的 `zipfile` 按 cp437→gbk 解码）。
+
+> **数据陷阱**：这几份表把缺失值写作字符串 `"NA"` 而非空值，`is.na()` 会漏判，
+> 必须显式过滤（见 `01_code/03c_china_traits.R` 中的 `nz()`）。
+
 系统发育树：鸟 Jetz et al. 2012；兽 Upham et al. 2019；有鳞目 Tonini et al. 2016；
 两栖 Jetz & Pyron 2018。均可从 [vertlife.org](https://vertlife.org) 获取。
 
