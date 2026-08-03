@@ -1,0 +1,6 @@
+axis,axis_label,trait,sign,interpretation
+SIZE,Body size,size,1,body size
+NICHE,Niche breadth,habitat_breadth,1,habitat breadth (+) and range size (+)
+NICHE,Niche breadth,range_size,1,habitat breadth (+) and range size (+)
+PACE,Slow-fast pace of life,size,0,negative residual of fecundity on size; high = slow
+PACE,Slow-fast pace of life,fecundity,-1,negative residual of fecundity on size; high = slow

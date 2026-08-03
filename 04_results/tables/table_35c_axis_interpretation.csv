@@ -1,0 +1,13 @@
+class,axis,top_traits
+Amphibia,PC1,Habitat breadth (-0.59); Range size (-0.58)
+Amphibia,PC2,Body size (+0.71); Verticality (-0.69)
+Amphibia,PC3,Clutch / litter size (+0.73); Nocturnality (-0.36)
+Aves,PC1,Habitat breadth (+0.53); Range size (+0.53)
+Aves,PC2,Clutch / litter size (+0.69); Nocturnality (-0.60)
+Aves,PC3,Verticality (+0.62); Range size (+0.48)
+Mammalia,PC1,Verticality (-0.52); Habitat breadth (+0.40)
+Mammalia,PC2,Clutch / litter size (-0.60); Habitat breadth (+0.48)
+Mammalia,PC3,Nocturnality (+0.58); Body size (-0.53)
+Reptilia,PC1,Body size (+0.57); Clutch / litter size (+0.56)
+Reptilia,PC2,Nocturnality (+0.67); Range size (-0.42)
+Reptilia,PC3,Verticality (-0.96); Body size (-0.21)

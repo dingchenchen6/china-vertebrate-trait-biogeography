@@ -1,0 +1,9 @@
+class,axis_f,Component traits,Composite axis,gain
+Amphibia,Pace,0.1255,0.1553,0.0298
+Amphibia,Niche,0.0546,0.0433,-0.0113
+Aves,Pace,0.0369,0.036,-9e-04
+Aves,Niche,0.0362,0.0321,-0.0041
+Mammalia,Pace,0.0482,0.036,-0.0122
+Mammalia,Niche,0.08,0.088,0.008
+Reptilia,Pace,0.1247,0.0993,-0.0254
+Reptilia,Niche,0.0664,0.0474,-0.0189

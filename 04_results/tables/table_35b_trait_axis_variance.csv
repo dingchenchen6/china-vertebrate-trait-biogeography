@@ -1,0 +1,13 @@
+class,axis,var_explained,n_species
+Aves,PC1,31.2,1086
+Aves,PC2,19.2,1086
+Aves,PC3,16.7,1086
+Mammalia,PC1,31.9,599
+Mammalia,PC2,24.5,599
+Mammalia,PC3,20.8,599
+Reptilia,PC1,34,472
+Reptilia,PC2,19,472
+Reptilia,PC3,16.6,472
+Amphibia,PC1,31.2,203
+Amphibia,PC2,22.8,203
+Amphibia,PC3,15.1,203
