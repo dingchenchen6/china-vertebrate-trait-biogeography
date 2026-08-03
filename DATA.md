@@ -52,13 +52,17 @@ reasons; every item is documented here so the analysis can be reproduced in full
 | 中国两栖动物生活史与生态学特征 | Song, Chen & Wang 2022 | [10.17520/biods.2022053](https://doi.org/10.17520/biods.2022053) | 591 种；补上活动节律 +15.3 pp |
 | 中国蜥蜴生活史与生态学特征 | Zhong, Chen & Wang 2022 | [10.17520/biods.2022071](https://doi.org/10.17520/biods.2022071) | 226 种；含体重与栖息地宽度 |
 | 中国鸟类生活史与生态学特征 | Wang, Song & Zhong 2021 | [10.17520/biods.2021201](https://doi.org/10.17520/biods.2021201) | 1,483 种；补上体长 +12.5 pp |
-| 中国蛇类形态/生活史/生态学特征 | Wang J. et al. 2023 | [10.17520/biods.2023126](https://doi.org/10.17520/biods.2023126) | **未取得**，期刊站点限流；爬行类全球库覆盖已 83–100%，不影响结论 |
+| 中国蛇类形态/生活史/生态学特征 | Wang J. et al. 2023 | [10.17520/biods.2023126](https://doi.org/10.17520/biods.2023126) | 341 种；提供分性别标准体长 |
+| **中国哺乳动物形态、生活史和生态特征** | **Ding et al. 2022** | [10.17520/biods.2021520](https://doi.org/10.17520/biods.2021520) | 754 种；含脑容量与附肢量度，但**不分性别** |
 
 附件下载模式：`https://www.biodiversity-science.net/fileup/1005-0094/DATA/<文章编号>.zip`
 （压缩包内文件名为 GBK 编码，`unzip` 会报「Illegal byte sequence」，需用 Python 的 `zipfile` 按 cp437→gbk 解码）。
 
-> **数据陷阱**：这几份表把缺失值写作字符串 `"NA"` 而非空值，`is.na()` 会漏判，
-> 必须显式过滤（见 `01_code/03c_china_traits.R` 中的 `nz()`）。
+> **两个数据陷阱**（均已在代码中处理，值得复用者注意）
+> 1. 缺失值写作字符串 `"NA"` 而非空值，`is.na()` 会漏判 → 见 `nz()`。
+> 2. 测量值常写成区间（如 `"1010~1210"`）。用 `gsub` 剥离非数字字符会把它拼成
+>    `10101210`——即 10 公里长的蛇。必须按分隔符切分取中点 → 见 `num()`。
+>    修正前后，可用的两栖类分性别体长由 76 种增至 472 种。
 
 系统发育树：鸟 Jetz et al. 2012；兽 Upham et al. 2019；有鳞目 Tonini et al. 2016；
 两栖 Jetz & Pyron 2018。均可从 [vertlife.org](https://vertlife.org) 获取。

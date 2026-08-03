@@ -1,0 +1,14 @@
+class,trait,n,scale,pearson,spearman,mean_china,mean_global,mean_diff
+Amphibia,body_length,325,log10 (both sides),0.949,0.935,1.78,1.83,-0.05
+Amphibia,litter_size,129,log10 (both sides),0.3,0.821,2.48,2.59,-0.109
+Reptilia,body_mass,152,log10 (both sides),0.941,0.923,0.83,1.15,-0.316
+Reptilia,body_length,155,log10 (both sides),0.966,0.935,1.84,1.94,-0.094
+Reptilia,habitat_breadth,146,raw,0.959,0.962,2.29,2.32,-0.027
+Reptilia,litter_size,121,log10 (both sides),0.971,0.968,0.61,0.6,0.01
+Aves,body_mass,1049,log10 (both sides),0.992,0.992,1.81,1.81,-0.007
+Aves,body_length,1086,log10 (both sides),0.977,0.984,2.35,2.35,-0.003
+Aves,litter_size,985,log10 (both sides),0.849,0.835,0.59,0.57,0.021
+Mammalia,body_mass,391,log10 (both sides),0.974,0.972,1.62,1.71,-0.09
+Mammalia,body_length,483,log10 (both sides),0.986,0.988,2.17,2.22,-0.053
+Mammalia,habitat_breadth,512,raw,0.946,0.946,2.71,2.55,0.16
+Mammalia,litter_size,496,log10 (both sides),0.929,0.917,0.42,0.4,0.013

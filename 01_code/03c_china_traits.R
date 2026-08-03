@@ -46,8 +46,28 @@ WD <- file.path(PATH$raw_trait, "china_wang")
 # 这些表把缺失写成字符串 "NA"；不显式处理会得到假的 100% 覆盖率
 # Missing values are the literal string "NA" in these files
 nz  <- function(x) { x <- as.character(x); !is.na(x) & trimws(x) != "" & x != "NA" }
-num <- function(x) { x <- as.character(x); x[!nz(x)] <- NA
-                     suppressWarnings(as.numeric(gsub("[^0-9.\\-]", "", x))) }
+#' 解析可能写成区间的数值
+#'
+#' 这几份数据集把测量值写成 "1010~1210" 这样的区间。若用 gsub 剥离非数字
+#' 字符，"1010~1210" 会被拼成 10101210——即 10 公里长的蛇。必须先按分隔符
+#' 切分再取中点。分隔符包括 ~ 、连字符、各种破折号；只有夹在数字之间的
+#' 连字符才视为区间，以免误伤负号。
+#' These files record measurements as ranges such as "1010~1210". Stripping
+#' non-numeric characters concatenates them into 10101210 - a ten-metre snake.
+#' Split on the separator and take the midpoint instead.
+num <- function(x) {
+  x <- as.character(x)
+  x[!nz(x)] <- NA
+  x <- trimws(gsub("[[:space:]\u00a0]+", "", x, perl = TRUE))
+  x <- gsub("(?<=[0-9])[~\u2013\u2014\u2212-](?=[0-9])", "|", x, perl = TRUE)
+  vapply(x, function(v) {
+    if (is.na(v) || !nzchar(v)) return(NA_real_)
+    parts <- suppressWarnings(as.numeric(strsplit(v, "|", fixed = TRUE)[[1]]))
+    parts <- parts[is.finite(parts)]
+    if (!length(parts)) return(NA_real_)
+    mean(parts)
+  }, numeric(1), USE.NAMES = FALSE)
+}
 
 traits <- readRDS(file.path(PATH$derived, "traits_imputed.rds"))
 
@@ -158,7 +178,42 @@ if (file.exists(f_bird)) {
 # Reptile coverage from global sources is already 83-100%, so nothing hinges
 # on it; DATA.md records how to obtain it.
 
-cn <- bind_rows(amph, liz, bird)
+# ---------------------------------------------------------------
+# 3b. 哺乳类 / Mammals (Ding et al. 2022)
+# ---------------------------------------------------------------
+# 该数据集**不分性别记录量度**，因此哺乳类无法进入性二态性分析（脚本 16）。
+# 其形态附肢性状（耳长 6.7%、尾长 4.3%、前臂长 3.7%）在本项目物种中过于
+# 稀疏，不足以支撑群落尺度分析（例如 Allen 法则检验）。
+# 本项目哺乳类的核心性状本已有 92.7-98.5% 的实测率，故这份数据的价值主要
+# 在**交叉验证**而非补缺——见 table_34。
+# This compilation does not separate the sexes, so mammals cannot enter the
+# sexual-dimorphism analysis. Its appendage traits are too sparse here for
+# assemblage-level work. Its value is cross-validation, not gap-filling.
+mam <- NULL
+f_mam <- file.path(WD, "China_mammals_traits_Ding2022.xlsx")
+if (file.exists(f_mam)) {
+  M <- read_excel(f_mam, sheet = 1)
+  sci <- grep("Scientific name", names(M), value = TRUE)[1]
+  pick <- function(pat) { v <- grep(pat, names(M), value = TRUE)[1]
+                          if (is.na(v)) rep(NA_real_, nrow(M)) else num(M[[v]]) }
+  ac <- as.character(M[[grep("Activity_cycle", names(M), value = TRUE)[1]]])
+  ac[!nz(ac)] <- NA
+  mam <- data.frame(species = norm_name(M[[sci]]), class = "Mammalia",
+                    cn_body_mass = pick("Body_mass_g"),
+                    cn_body_length = pick("Body_length_mm"),
+                    cn_litter_size = pick("Litter_size_n"),
+                    cn_habitat_breadth = pick("Habitat_ ?breadth"),
+                    cn_nocturnality = dplyr::case_when(
+                      grepl("夜|Noct", ac) ~ 1,
+                      grepl("昼|Diur", ac) ~ 0,
+                      grepl("晨昏|Crepus", ac) ~ 0.5,
+                      TRUE ~ NA_real_),
+                    stringsAsFactors = FALSE) |>
+    filter(!is.na(species), species != "") |> distinct(species, .keep_all = TRUE)
+  log_msg("哺乳 / mammals: ", nrow(mam), " 种（Ding et al. 2022）")
+}
+
+cn <- bind_rows(amph, liz, bird, mam)
 saveRDS(cn, file.path(PATH$derived, "traits_observed_china.rds"))
 
 # ---------------------------------------------------------------
@@ -168,7 +223,7 @@ FLAGS <- c(body_mass = "flag_mass", body_length = "flag_len",
            nocturnality = "flag_act", verticality = "flag_hab",
            habitat_breadth = "flag_mhab")
 rows <- list()
-for (cl in c("Amphibia", "Reptilia", "Aves")) {
+for (cl in c("Amphibia", "Reptilia", "Aves", "Mammalia")) {
   tr <- traits |> filter(class == cl) |> distinct(species, .keep_all = TRUE)
   cc <- cn |> filter(class == cl)
   j  <- cc[match(tr$species, cc$species), ]
@@ -193,5 +248,49 @@ for (cl in c("Amphibia", "Reptilia", "Aves")) {
 cov <- bind_rows(rows)
 write_table(cov, "table_30_china_trait_coverage")
 print(as.data.frame(cov))
+
+# ---------------------------------------------------------------
+# 5. 交叉验证：中国本土值 vs 全球库值 / Cross-validation
+# ---------------------------------------------------------------
+# 这些数据集是独立编纂的，因此二者的一致程度是对**双方**的检验。
+# 量表不同的性状（如生境宽度）只报告相关，不做合并。
+# The compilations are independent, so agreement tests both sources. Traits on
+# different scales are reported as correlations only, never merged.
+val <- list()
+for (cl in c("Amphibia", "Reptilia", "Aves", "Mammalia")) {
+  tr <- traits |> filter(class == cl) |> distinct(species, .keep_all = TRUE)
+  cc <- cn |> filter(class == cl)
+  if (!nrow(cc)) next
+  j <- cc[match(tr$species, cc$species), ]
+  for (v in c("body_mass", "body_length", "habitat_breadth", "litter_size")) {
+    a <- suppressWarnings(as.numeric(j[[paste0("cn_", v)]]))
+    b <- suppressWarnings(as.numeric(tr[[v]]))
+    ok <- is.finite(a) & is.finite(b)
+    if (sum(ok) < 30) next
+    # traits_imputed.rds 中体型、窝仔数、分布范围、寿命**已经是 log10**；
+    # 中国本土表是原始尺度。因此只对中国值取一次对数，绝不对已取对数的
+    # 全球值再取一次（那会扭曲 Pearson，Spearman 则因单调而不受影响）。
+    # The stored global values are already log10 for these traits; log only the
+    # China side. Double-logging distorts Pearson though not Spearman.
+    LOGGED <- c("body_mass", "body_length", "litter_size", "range_size",
+                "max_longevity")
+    lg <- v %in% LOGGED
+    x <- if (lg) log10(pmax(a[ok], 1e-9)) else a[ok]   # 中国值 -> log10
+    y <- b[ok]                                          # 全球值：已是所需尺度
+    val[[length(val) + 1]] <- data.frame(
+      class = cl, trait = v, n = sum(ok),
+      scale = if (lg) "log10 (both sides)" else "raw",
+      pearson = round(stats::cor(x, y), 3),
+      spearman = round(stats::cor(x, y, method = "spearman"), 3),
+      mean_china = round(mean(x), 2), mean_global = round(mean(y), 2),
+      mean_diff = round(mean(x) - mean(y), 3))
+  }
+}
+if (length(val)) {
+  val <- bind_rows(val)
+  write_table(val, "table_34_china_global_validation")
+  log_msg("--- 中国本土值与全球库值的一致性 ---")
+  print(as.data.frame(val))
+}
 
 log_msg("=== 03c 完成 / done ===")
