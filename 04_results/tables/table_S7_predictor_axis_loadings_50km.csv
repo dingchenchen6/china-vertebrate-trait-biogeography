@@ -1,0 +1,16 @@
+group,variable,loading,var_explained
+ax_thermal,bio1_mean,0.522,58.7
+ax_thermal,bio6_mean,0.625,58.7
+ax_thermal,bio4_mean,-0.537,58.7
+ax_thermal,bio3_mean,0.22,58.7
+ax_water,bio12_mean,0.589,77.5
+ax_water,bio15_mean,-0.509,77.5
+ax_water,bio17_mean,0.627,77.5
+ax_productivity,npp,0.707,84
+ax_productivity,lc_trees,0.707,84
+ax_structure,elev_range,0.687,66.9
+ax_structure,het_shannon,0.254,66.9
+ax_structure,bio1_sd,0.68,66.9
+ax_human,hfp2020,0.615,79.4
+ax_human,lc_cropland,0.545,79.4
+ax_human,lc_built,0.571,79.4

@@ -1,0 +1,16 @@
+Scenario,Coupling measure,Endotherm families (n),Ectotherm families (n),Endotherm mean,Ectotherm mean,Ratio (ecto / endo),P (Wilcoxon),P (mixed model)
+Full data set (33 families),All environmental axes,21,12,0.098,0.1687,1.72,0.019*,0.234
+Full data set (33 families),Thermal-energy axis,21,12,0.1915,0.3437,1.79,0.026*,0.017*
+Full data set (33 families),Human-pressure axis,21,12,0.0376,0.0734,1.95,0.005**,0.160
+Excluding Aves,All environmental axes,8,12,0.0977,0.1687,1.73,0.097†,0.467
+Excluding Aves,Thermal-energy axis,8,12,0.2059,0.3437,1.67,0.177,0.145
+Excluding Aves,Human-pressure axis,8,12,0.0452,0.0734,1.62,0.028*,0.609
+Excluding Mammalia,All environmental axes,13,12,0.0982,0.1687,1.72,0.028*,0.475
+Excluding Mammalia,Thermal-energy axis,13,12,0.1827,0.3437,1.88,0.024*,0.037*
+Excluding Mammalia,Human-pressure axis,13,12,0.0329,0.0734,2.23,0.011*,0.419
+Excluding Reptilia,All environmental axes,21,5,0.098,0.2119,2.16,0.008**,0.003**
+Excluding Reptilia,Thermal-energy axis,21,5,0.1915,0.3967,2.07,0.059†,0.016*
+Excluding Reptilia,Human-pressure axis,21,5,0.0376,0.0937,2.49,0.009**,0.007**
+Excluding Amphibia,All environmental axes,21,7,0.098,0.1378,1.41,0.265,0.136
+Excluding Amphibia,Thermal-energy axis,21,7,0.1915,0.3058,1.6,0.111,0.057†
+Excluding Amphibia,Human-pressure axis,21,7,0.0376,0.0589,1.57,0.063†,0.207

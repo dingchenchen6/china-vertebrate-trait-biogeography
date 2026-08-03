@@ -1,0 +1,10 @@
+class,K,beta_ratio
+Aves,10,0.071
+Aves,20,0.19
+Aves,30,0.241
+Mammalia,10,0.161
+Mammalia,20,0.341
+Mammalia,30,0.408
+Reptilia,10,0.499
+Reptilia,20,0.662
+Reptilia,30,0.734

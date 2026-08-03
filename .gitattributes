@@ -1,0 +1,8 @@
+*.pdf binary
+*.png binary
+*.gpkg binary
+*.rds binary
+*.xlsx binary
+*.R text eol=lf
+*.py text eol=lf
+*.md text eol=lf

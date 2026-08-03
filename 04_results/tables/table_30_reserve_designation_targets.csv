@@ -1,0 +1,5 @@
+class,n_reserves,pct_reserves,n_total,thermal
+Mammalia,184,17.9,1028,Endotherm
+Aves,132,12.8,1028,Endotherm
+Reptilia,11,1.1,1028,Ectotherm
+Amphibia,33,3.2,1028,Ectotherm

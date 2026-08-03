@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the repository."
+title: "Endothermy buffers assemblage trait composition against environmental filtering across Chinese terrestrial vertebrates"
+abstract: >-
+  Code and aggregated results for a study of assemblage-level functional trait
+  structure in 2,837 Chinese terrestrial vertebrates (birds, mammals, reptiles,
+  amphibians) on nested 50-km and 100-km equal-area grids. The analysis uses
+  families as replicates to test whether thermoregulatory mode predicts the
+  strength of trait-environment coupling, decomposes assemblage trait
+  distributions into their first four moments, applies fourth-corner max tests
+  to avoid the Type I error inflation of naive community-weighted-mean
+  regression, and evaluates conservation gaps against China's protected areas.
+authors:
+  - family-names: Ding
+    given-names: Chenchen
+    affiliation: Peking University
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+keywords:
+  - functional biogeography
+  - community assembly
+  - thermoregulation
+  - trait-environment coupling
+  - terrestrial vertebrates
+  - China
+  - conservation gap analysis
+license: MIT
+repository-code: "https://github.com/dingchenchen6/china-vertebrate-trait-biogeography"
+version: "1.0.0"
+date-released: "2026-08-03"

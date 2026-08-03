@@ -1,0 +1,16 @@
+scenario,class_dropped,metric,n_endo,n_ecto,endo_mean,ecto_mean,ratio,p_wilcoxon,p_mixed
+Full data set (33 families),,coupling,21,12,0.098,0.1687,1.72,0.0193,0.234
+Full data set (33 families),,coupling_thermal,21,12,0.1915,0.3437,1.79,0.026,0.0165
+Full data set (33 families),,coupling_human,21,12,0.0376,0.0734,1.95,0.00472,0.16
+Excluding Aves,Aves,coupling,8,12,0.0977,0.1687,1.73,0.0972,0.467
+Excluding Aves,Aves,coupling_thermal,8,12,0.2059,0.3437,1.67,0.177,0.145
+Excluding Aves,Aves,coupling_human,8,12,0.0452,0.0734,1.62,0.0279,0.609
+Excluding Mammalia,Mammalia,coupling,13,12,0.0982,0.1687,1.72,0.0276,0.475
+Excluding Mammalia,Mammalia,coupling_thermal,13,12,0.1827,0.3437,1.88,0.024,0.0372
+Excluding Mammalia,Mammalia,coupling_human,13,12,0.0329,0.0734,2.23,0.0114,0.419
+Excluding Reptilia,Reptilia,coupling,21,5,0.098,0.2119,2.16,0.00764,0.0027
+Excluding Reptilia,Reptilia,coupling_thermal,21,5,0.1915,0.3967,2.07,0.0592,0.0164
+Excluding Reptilia,Reptilia,coupling_human,21,5,0.0376,0.0937,2.49,0.00926,0.00656
+Excluding Amphibia,Amphibia,coupling,21,7,0.098,0.1378,1.41,0.265,0.136
+Excluding Amphibia,Amphibia,coupling_thermal,21,7,0.1915,0.3058,1.6,0.111,0.0573
+Excluding Amphibia,Amphibia,coupling_human,21,7,0.0376,0.0589,1.57,0.0633,0.207

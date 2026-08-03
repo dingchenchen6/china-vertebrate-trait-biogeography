@@ -1,0 +1,4 @@
+class,thermal,n_pairs,tax_sor,tax_sim,tax_sne,fun_sor,fun_sim,fun_sne,beta_ratio,redundancy,pct_turnover_tax,pct_turnover_fun,ratio_lo,ratio_hi
+Aves,Endotherm,7282,0.046,0.021,0.024,0.009,0.001,0.008,0.19,0.81,46.639,8.119,0.182,0.199
+Mammalia,Endotherm,7302,0.058,0.029,0.029,0.02,0.003,0.017,0.341,0.659,49.447,16.27,0.331,0.351
+Reptilia,Ectotherm,7031,0.071,0.02,0.051,0.047,0.007,0.04,0.662,0.338,28.176,14.01,0.643,0.679

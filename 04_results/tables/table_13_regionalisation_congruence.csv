@@ -1,0 +1,10 @@
+x,y,ari,ari_k2,x_f,y_f
+Aves,Aves,,,Birds,Birds
+Aves,Mammalia,0.240911641211684,0.165996852099537,Birds,Mammals
+Aves,Reptilia,0.58781715837068,0.58781715837068,Birds,Reptiles
+Mammalia,Aves,0.240911641211684,0.165996852099537,Mammals,Birds
+Mammalia,Mammalia,,,Mammals,Mammals
+Mammalia,Reptilia,0.348338426602605,0.0819191581133241,Mammals,Reptiles
+Reptilia,Aves,0.58781715837068,0.58781715837068,Reptiles,Birds
+Reptilia,Mammalia,0.348338426602605,0.0819191581133241,Reptiles,Mammals
+Reptilia,Reptilia,,,Reptiles,Reptiles

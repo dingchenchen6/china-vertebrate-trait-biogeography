@@ -1,0 +1,46 @@
+# ============================================================
+# 版本控制范围 / What is version-controlled
+#
+# 原则：代码、文档、图件、聚合结果全部公开；
+#       受许可限制或体积过大的原始/中间数据不入库，改在 DATA.md 中给出获取方式。
+# Principle: all code, documentation, figures and aggregated results are public;
+# licence-restricted or bulky raw data stay out and are documented in DATA.md.
+# ============================================================
+
+# ---- 原始数据：体积 10 GB，且部分受再分发限制 -------------------
+# Raw data: 10 GB, and partly redistribution-restricted
+02_data_raw/
+
+# ---- IUCN 衍生的物种级数据 -------------------------------------
+# IUCN Red List spatial data may not be redistributed, and a species-by-cell
+# presence matrix is a reformatting of it rather than an aggregate summary.
+# Per-cell aggregated metrics (no species identities) are included.
+03_data_derived/comm_*.rds
+03_data_derived/ranges_albers_*.gpkg
+03_data_derived/splist_*.rds
+03_data_derived/traits_china_raw.rds
+03_data_derived/traits_imputed.rds
+03_data_derived/amphibian_observed_traits.rds
+
+# ---- 中间缓存：可由代码重建 -------------------------------------
+# Caches: fully reproducible from the code
+04_results/cache/
+04_results/models/
+07_logs/
+
+# ---- 体积过大的底图副本 ----------------------------------------
+03_data_derived/basemap_珊瑚礁.gpkg
+03_data_derived/basemap_0-15KM缓冲国界.gpkg
+
+# ---- 系统与运行时 ----------------------------------------------
+.Rhistory
+.RData
+.Rproj.user/
+.DS_Store
+_scout/
+*.log
+*.tar.gz
+
+# 本地代理配置与散落文件 / local agent config and stray files
+.claude/
+Rplots.pdf

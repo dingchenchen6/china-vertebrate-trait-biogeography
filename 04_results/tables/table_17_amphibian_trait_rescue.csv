@@ -1,0 +1,7 @@
+trait,n_observed,n_total,pct,retained
+body_length,284,438,64.8,TRUE
+verticality,272,438,62.1,TRUE
+habitat_breadth,265,438,60.5,TRUE
+range_size,438,438,100,TRUE
+body_mass,35,438,8,FALSE
+nocturnality,47,438,10.7,FALSE

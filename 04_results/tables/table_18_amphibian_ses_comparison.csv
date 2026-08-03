@@ -1,0 +1,5 @@
+scenario,n_traits,n_species,n_cells,mean_SES,pct_positive
+"A. Main analysis (6 traits, imputed)",6,438,1995,1.86,96.6
+B. Observed-only species (6 traits),6,69,1653,-0.4,28.1
+C. Well-measured trait set (4 traits),4,215,1412,0.1,54.7
+D. Same 4 traits but imputed values,4,438,1995,0.92,89.5

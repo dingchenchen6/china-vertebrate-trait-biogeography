@@ -1,0 +1,16 @@
+Response,Assemblage source,Estimate ± SE,Cells (n),P (BH-adjusted)
+body_mass.mean,Range map,0.0032 ± 0.0074,3772,0.753
+body_mass.mean,Occurrence,0.0455 ± 0.0358,944,0.314
+body_mass.mean,Occurrence + coverage control,0.0411 ± 0.0361,944,0.379
+habitat_breadth.mean,Range map,0.0090 ± 0.0061,3772,0.239
+habitat_breadth.mean,Occurrence,-0.0222 ± 0.0391,944,0.710
+habitat_breadth.mean,Occurrence + coverage control,0.0021 ± 0.0388,944,0.976
+range_size.mean,Range map,0.0178 ± 0.0054,3772,0.003
+range_size.mean,Occurrence,0.0696 ± 0.0335,944,0.074
+range_size.mean,Occurrence + coverage control,0.1000 ± 0.0327,944,0.006
+body_mass.var,Range map,-0.0065 ± 0.0069,3772,0.475
+body_mass.var,Occurrence,0.0119 ± 0.0388,944,0.801
+body_mass.var,Occurrence + coverage control,-0.0159 ± 0.0384,944,0.753
+habitat_breadth.var,Range map,0.0004 ± 0.0097,3772,0.976
+habitat_breadth.var,Occurrence,0.1154 ± 0.0480,944,0.034
+habitat_breadth.var,Occurrence + coverage control,0.1154 ± 0.0483,944,0.035

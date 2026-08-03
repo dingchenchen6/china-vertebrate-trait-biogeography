@@ -1,0 +1,7 @@
+Trait,Species with observed values (n),Species total (n),Coverage (%),Retained in the well-measured set
+Body length,284,438,64.8,yes
+Verticality,272,438,62.1,yes
+Habitat breadth,265,438,60.5,yes
+Range size,438,438,100,yes
+Body mass,35,438,8,no
+Nocturnality,47,438,10.7,no
