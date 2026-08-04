@@ -106,9 +106,15 @@ fig1 <- function() {
     scale_fill_manual(values = PAL$taxa, guide = "none") +
     scale_y_continuous(expand = expansion(mult = c(0, 0.20))) +
     coord_flip() +
+    # 网格数从数据实时取，不写死：早先写死的 3,814 是排除南海附图框内 32 个
+    # 重复网格**之前**的数字，与正文其余各处的 3,782 不一致。
+    # Cell count is read from the data rather than hard-coded; the previous
+    # literal 3,814 predated the exclusion of the 32 South China Sea inset
+    # cells and disagreed with the 3,782 used everywhere else.
     labs(x = NULL, y = "Species analysed (n)", tag = "b",
-         subtitle = sprintf("%s species, 3,814 cells of 50 km",
-                            format(sum(sp_n$n_species), big.mark = ","))) +
+         subtitle = sprintf("%s species in the assemblage matrix, %s analysable cells of 50 km",
+                            format(sum(sp_n$n_species), big.mark = ","),
+                            format(length(analysable_cells("50km")), big.mark = ","))) +
     theme_pub() + theme(plot.subtitle = element_text(size = 5, colour = "grey30"))
 
   # (c-f) 四类群物种丰富度地图 / richness maps
