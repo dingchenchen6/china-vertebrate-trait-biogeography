@@ -41,8 +41,12 @@ suppressPackageStartupMessages({
 log_msg("=== 06c 目级重复分析 / Clade(order)-level replication ===")
 
 CLADE_RANK   <- "family"  # 重复单元 / replicate unit
-MIN_SP_CLADE <- 20L    # 纳入分析的科所需最少中国物种数 / min species per family
-MIN_CELLS    <- 100L   # 该科至少要占据的网格数 / min occupied cells
+# 阈值可由环境变量覆盖，用于阈值敏感性检验（06j）。默认值不变。
+# Thresholds can be overridden by environment variables so that 06j can
+# re-run the whole pipeline at other cut-offs; defaults are unchanged.
+MIN_SP_CLADE <- as.integer(Sys.getenv("CLADE_MIN_SP", "20"))
+MIN_CELLS    <- as.integer(Sys.getenv("CLADE_MIN_CELLS", "100"))
+TAG <- Sys.getenv("CLADE_TAG", "")   # 非空时给输出表加后缀，避免覆盖主结果
 GRAIN_LAB    <- "50km"
 N_NULL_C     <- 499L   # 目级零模型次数（目数量多，适度降低）/ nulls per clade
 N_CORES      <- max(1L, parallel::detectCores() - 2L)
@@ -220,7 +224,7 @@ eff <- bind_rows(results)
 if (!nrow(eff)) { log_msg("[warn] 无目级结果"); quit(save = "no") }
 eff <- eff |> left_join(TAXA[, c("class", "thermal")], by = "class")
 eff$p_adj <- stats::p.adjust(eff$p, method = "BH")
-write_table(eff, "table_5_clade_level_effects")
+write_table(eff, paste0("table_5_clade_level_effects", TAG))
 log_msg("科级效应: ", nrow(eff), " 行, ", length(unique(eff$clade)), " 个科")
 
 # ---------------------------------------------------------------
@@ -278,7 +282,7 @@ for (r in unique(eff$response)) {
 ct <- bind_rows(contrasts_out)
 if (nrow(ct)) {
   ct$p_adj <- stats::p.adjust(ct$p, method = "BH")
-  write_table(ct, "table_6_thermal_mode_contrast")
+  write_table(ct, paste0("table_6_thermal_mode_contrast", TAG))
   log_msg("体温调节模式对比: ", nrow(ct), " 项, 显著 (BH<0.05): ",
           sum(ct$p_adj < 0.05, na.rm = TRUE))
   print(as.data.frame(ct |> filter(p_adj < 0.10) |> arrange(p_adj)))
@@ -300,7 +304,7 @@ fam <- eff |>
             coupling_human   = mean(abs(estimate[term == "ax_human"]),   na.rm = TRUE),
             .groups = "drop") |>
   mutate(thermal = factor(thermal, levels = c("Endotherm", "Ectotherm")))
-write_table(fam, "table_7_family_coupling_strength")
+write_table(fam, paste0("table_7_family_coupling_strength", TAG))
 
 headline <- list()
 for (v in c("coupling", "coupling_thermal", "coupling_human")) {
@@ -332,7 +336,7 @@ for (v in c("coupling", "coupling_thermal", "coupling_human")) {
     model = src, row.names = NULL)
 }
 headline <- bind_rows(headline)
-write_table(headline, "table_6b_headline_thermal_test")
+write_table(headline, paste0("table_6b_headline_thermal_test", TAG))
 log_msg("--- 总体检验 / headline test ---")
 print(as.data.frame(headline))
 

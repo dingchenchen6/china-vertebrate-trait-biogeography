@@ -170,7 +170,31 @@ fig2 <- function() {
   rows <- split(panels, rep(seq_along(traits_show), each = 4)[seq_along(panels)])
   rows <- lapply(rows, function(ps) panels_shared_legend(ps, ncol = 4))
   p <- wrap_plots(rows, ncol = 1)
-  save_fig(p, "Fig2_CWM_maps", W2, 50 * length(traits_show), FIG)
+
+  # 空白格必须解释清楚：西北部两栖类的大片空白不是「无数据」，而是
+  # 「物种数 < 5，群落矩不可估」。不写明这一点，读者会误读为该区没有两栖类。
+  # Blank cells must be explained: the large gap in north-west China for
+  # amphibians is not missing data but cells holding fewer than five species,
+  # where assemblage moments cannot be estimated. Without saying so, readers
+  # will read it as "no amphibians here".
+  occ <- vapply(TAXA$class, function(cl) {
+    f <- file.path(PATH$derived, sprintf("comm_%s_50km.rds", cl))
+    if (!file.exists(f)) return(NA_real_)
+    cc <- drop_inset(readRDS(f), "50km")
+    r <- as.numeric(table(cc$cell_id))
+    100 * sum(r >= 5) / length(analysable_cells("50km"))
+  }, numeric(1))
+  cap <- paste0(
+    "Blank cells hold fewer than five species of that class, so assemblage ",
+    "moments are not estimable there; they are not absences. Cells mapped: ",
+    paste(sprintf("%s %.0f%%", TAXA_LAB[TAXA$class], occ), collapse = ", "),
+    " of analysable land cells.")
+  p <- p + plot_annotation(
+    caption = cap,
+    theme = ggplot2::theme(
+      plot.caption = ggplot2::element_text(size = 5, colour = "grey35",
+                                           hjust = 0, lineheight = 1.1)))
+  save_fig(p, "Fig2_CWM_maps", W2, 50 * length(traits_show) + 8, FIG)
 }
 
 # ===============================================================

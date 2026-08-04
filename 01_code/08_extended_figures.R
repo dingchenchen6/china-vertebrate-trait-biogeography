@@ -39,7 +39,7 @@ read_metrics <- function(lab) {
 m50  <- read_metrics("50km"); m100 <- read_metrics("100km")
 
 TRAIT_LAB <- c(body_mass = "Body mass", body_length = "Body length",
-               nocturnality = "Nocturnality", verticality = "Verticality",
+               nocturnality = "Nocturnality", verticality = "Vertical stratum use",
                habitat_breadth = "Habitat breadth", range_size = "Range size",
                diet_breadth = "Diet breadth", diet_vert = "Vertebrate diet",
                diet_plant = "Plant diet", litter_size = "Litter/clutch size",
