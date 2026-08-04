@@ -58,7 +58,7 @@ N_CORES <- max(1L, parallel::detectCores() - 2L)
 CORE <- c("body_mass", "body_length", "nocturnality", "verticality",
           "habitat_breadth", "range_size")
 TRAIT_LAB <- c(body_mass = "Body mass", body_length = "Body length",
-               nocturnality = "Nocturnality", verticality = "Verticality",
+               nocturnality = "Nocturnality", verticality = "Vertical stratum use",
                habitat_breadth = "Habitat breadth", range_size = "Range size")
 PRED_LAB <- c(ax_thermal = "Thermal energy", ax_water = "Water availability",
               ax_productivity = "Productivity", ax_structure = "Habitat structure",

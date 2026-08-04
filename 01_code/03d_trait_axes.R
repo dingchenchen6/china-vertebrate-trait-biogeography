@@ -116,7 +116,7 @@ CORE6 <- c("size", "litter_size", "nocturnality", "verticality",
            "habitat_breadth", "range_size")
 LAB <- c(size = "Body size", litter_size = "Clutch / litter size",
          generation_length = "Generation length", nocturnality = "Nocturnality",
-         verticality = "Verticality", habitat_breadth = "Habitat breadth",
+         verticality = "Vertical stratum use", habitat_breadth = "Habitat breadth",
          range_size = "Range size")
 
 axes <- list(); loads <- list(); vexp <- list()

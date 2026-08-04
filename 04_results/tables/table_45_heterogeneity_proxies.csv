@@ -1,0 +1,4 @@
+pair,spearman_r
+elev_range – lc_shannon,-0.194
+elev_range – het_shannon,0.151
+lc_shannon – het_shannon,0.224

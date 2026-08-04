@@ -31,7 +31,7 @@ rd <- function(f) data.table::fread(file.path(TBL, f))
 TAXA_EN <- c(Aves = "Birds", Mammalia = "Mammals",
              Reptilia = "Reptiles", Amphibia = "Amphibians")
 TRAIT_EN <- c(body_mass = "Body mass", body_length = "Body length",
-              nocturnality = "Nocturnality", verticality = "Verticality",
+              nocturnality = "Nocturnality", verticality = "Vertical stratum use",
               habitat_breadth = "Habitat breadth", range_size = "Range size",
               diet_breadth = "Diet breadth", diet_vert = "Vertebrate diet",
               diet_plant = "Plant diet", litter_size = "Litter/clutch size",

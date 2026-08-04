@@ -70,7 +70,7 @@ TRAITS <- c("size", "fecundity", "nocturnality", "verticality",
             "habitat_breadth", "range_size")
 AXES   <- c("SIZE", "PACE", "NICHE")
 RESP_LAB <- c(size = "Body size", fecundity = "Fecundity",
-              nocturnality = "Nocturnality", verticality = "Verticality",
+              nocturnality = "Nocturnality", verticality = "Vertical stratum use",
               habitat_breadth = "Habitat breadth", range_size = "Range size",
               SIZE = "Axis: body size", PACE = "Axis: slow-fast pace",
               NICHE = "Axis: niche breadth")
@@ -224,7 +224,7 @@ FIG <- PATH$figures
 PLOT_RESP <- c("size", "fecundity", "nocturnality", "verticality",
                "habitat_breadth", "range_size", "PACE", "NICHE")
 PLOT_LAB <- c(size = "Body size  (= size axis)", fecundity = "Fecundity",
-              nocturnality = "Nocturnality", verticality = "Verticality",
+              nocturnality = "Nocturnality", verticality = "Vertical stratum use",
               habitat_breadth = "Habitat breadth", range_size = "Range size",
               PACE = "Axis: slow–fast pace", NICHE = "Axis: niche breadth")
 # 轴刻度用短名，全称放在图注里，避免窄列上的标签互相重叠

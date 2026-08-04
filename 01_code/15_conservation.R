@@ -69,9 +69,20 @@ read_metrics <- function(lab = "50km") {
     left_join(TAXA[, c("class", "thermal")], by = "class")
 }
 m50 <- read_metrics()
-# 两栖类性状 84% 为上游插补，其群落指标不可靠（ED9），故不参与保护推断
-# Amphibian metrics rest on largely imputed traits and are excluded from inference
-CLS3 <- c("Aves", "Mammalia", "Reptilia")
+# 两栖类为什么现在纳入 / Why amphibians are now included
+#   旧版排除两栖类，理由是「性状 84% 为上游插补」。核查后这一理由只对
+#   **体重**成立（TetrapodTraits 中两栖类体重 74.7% 由异速关系推算）。
+#   自采用「每纲一个体型量度」后，两栖类改用**体长**，上游插补仅 0.7%；
+#   其余核心性状的上游插补也很低（生境宽度 3.0%、垂直生境 11.4%、
+#   分布范围 0%）。唯一仍高的是活动节律（70.8%），而它不进入任何功能轴。
+#   因此原排除理由已不适用，两栖类重新纳入；活动节律相关的结论
+#   在两栖类中仍标注为插补驱动。
+#   The old exclusion rested on body mass being 74.7% allometrically inferred.
+#   With one size measure per class, amphibians now use body length (0.7%
+#   upstream-imputed), so the reason no longer applies. Nocturnality remains
+#   70.8% imputed but enters none of the three axes.
+CLS4 <- c("Aves", "Mammalia", "Reptilia", "Amphibia")
+CLS3 <- CLS4   # 名称保留以免改动下游引用 / kept so downstream references hold
 
 # ---------------------------------------------------------------
 # 1. 保护区覆盖度 / Protected-area coverage per cell

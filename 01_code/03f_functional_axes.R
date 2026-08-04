@@ -58,7 +58,7 @@ core <- core |>
 CORE <- c("size", "fecundity", "nocturnality", "verticality",
           "habitat_breadth", "range_size")
 LAB <- c(size = "Body size", fecundity = "Fecundity",
-         nocturnality = "Nocturnality", verticality = "Verticality",
+         nocturnality = "Nocturnality", verticality = "Vertical stratum use",
          habitat_breadth = "Habitat breadth", range_size = "Range size")
 
 # ---------------------------------------------------------------

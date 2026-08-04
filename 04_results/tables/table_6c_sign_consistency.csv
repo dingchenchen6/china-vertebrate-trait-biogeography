@@ -1,2 +1,2 @@
 n_contrasts,n_ectotherm_stronger,binomial_p,note
-30,30,1.863e-09,correlated tests; descriptive support only
+30,23,0.005223,correlated tests; descriptive support only

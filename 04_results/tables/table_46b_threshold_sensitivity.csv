@@ -1,0 +1,10 @@
+metric,n_families,n_endo,n_ecto,endo_mean,ecto_mean,ratio_ecto_endo,contrast,se,p_mixed,p_wilcoxon,model,threshold
+coupling,47,34,13,0.1381,0.1663,1.2,0.028,0.0382,0.529,0.108,lmer (1|class/order),"≥10 spp, ≥50 cells"
+coupling_thermal,47,34,13,0.2537,0.3368,1.33,0.0831,0.0677,0.226,0.15,lmer (1|class/order),"≥10 spp, ≥50 cells"
+coupling_human,47,34,13,0.094,0.0694,0.74,-0.0592,0.213,0.79,0.0689,lmer (1|class/order),"≥10 spp, ≥50 cells"
+coupling,33,21,12,0.098,0.1687,1.72,0.0719,0.03,0.234,0.0193,lmer (1|class/order),"≥20 spp, ≥100 cells (main)"
+coupling_thermal,33,21,12,0.1915,0.3437,1.79,0.1522,0.06,0.0165,0.026,lmer (1|class/order),"≥20 spp, ≥100 cells (main)"
+coupling_human,33,21,12,0.0376,0.0734,1.95,0.0376,0.0177,0.16,0.00472,lmer (1|class/order),"≥20 spp, ≥100 cells (main)"
+coupling,22,11,11,0.0808,0.1461,1.81,0.0654,0.0212,0.00593,0.0181,lmer (1|class/order),"≥30 spp, ≥150 cells"
+coupling_thermal,22,11,11,0.1705,0.2915,1.71,0.1211,0.0578,0.049,0.0356,lmer (1|class/order),"≥30 spp, ≥150 cells"
+coupling_human,22,11,11,0.0261,0.0725,2.78,0.0492,0.0184,0.123,0.00203,lmer (1|class/order),"≥30 spp, ≥150 cells"

@@ -1,0 +1,4 @@
+metric,n_families,n_endo,n_ecto,endo_mean,ecto_mean,ratio_ecto_endo,contrast,se,p_mixed,p_wilcoxon,model
+coupling,22,11,11,0.0808,0.1461,1.81,0.0654,0.0212,0.00593,0.0181,lmer (1|class/order)
+coupling_thermal,22,11,11,0.1705,0.2915,1.71,0.1211,0.0578,0.049,0.0356,lmer (1|class/order)
+coupling_human,22,11,11,0.0261,0.0725,2.78,0.0492,0.0184,0.123,0.00203,lmer (1|class/order)

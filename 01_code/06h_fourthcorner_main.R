@@ -57,7 +57,7 @@ TRAITS <- c("size", "fecundity", "nocturnality", "verticality",
             "habitat_breadth", "range_size")
 AXES   <- c("SIZE", "PACE", "NICHE")
 RESP_LAB <- c(size = "Body size", fecundity = "Fecundity",
-              nocturnality = "Nocturnality", verticality = "Verticality",
+              nocturnality = "Nocturnality", verticality = "Vertical stratum use",
               habitat_breadth = "Habitat breadth", range_size = "Range size",
               SIZE = "Axis: body size", PACE = "Axis: slow–fast pace",
               NICHE = "Axis: niche breadth")
