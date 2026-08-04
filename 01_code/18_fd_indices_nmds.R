@@ -102,14 +102,22 @@ run_class <- function(cl) {
   # 正是为了检验结论是否依赖于某一个指标。
   # FRic uses a convex hull and does not scale to 1,000+ species; it is already
   # reported in ED10, so the four hull-free indices are used here instead.
-  fd <- try(FD::dbFD(D, L, calc.FRic = FALSE, calc.FDiv = FALSE, calc.CWM = FALSE,
-                     m = 3, messages = FALSE), silent = TRUE)
+  # dbFD 单纲需数分钟，逐纲缓存，使后续修正不必重算
+  # dbFD takes minutes per class; cache per class so later fixes are cheap.
+  fd <- cache_rds(paste0("fd_indices_", cl),
+                  try(FD::dbFD(D, L, calc.FRic = FALSE, calc.FDiv = FALSE,
+                               calc.CWM = FALSE, m = 3, messages = FALSE),
+                      silent = TRUE))
   if (inherits(fd, "try-error")) { log_msg("   [fail] dbFD ", cl); return(NULL) }
 
-  obs <- data.frame(cell_id = as.integer(rownames(L)), class = cl,
-                    richness = rowSums(L),
+  # cell_id 在全项目中是**字符型**主键；早先用 as.integer() 把它全变成了 NA，
+  # 导致后面的 join 失败。保持字符型。
+  # cell_id is a character key project-wide; coercing it to integer silently
+  # produced all-NA and broke the join downstream.
+  obs <- data.frame(cell_id = rownames(L), class = cl,
+                    richness = as.numeric(rowSums(L)),
                     FEve = fd$FEve, FDis = fd$FDis, RaoQ = fd$RaoQ,
-                    row.names = NULL)
+                    stringsAsFactors = FALSE, row.names = NULL)
   list(obs = obs, L = L, D = D, X = X)
 }
 
@@ -172,7 +180,7 @@ for (cl in names(RES)) {
   CW <- (L %*% as.matrix(X)) / rowSums(L)
   CWz <- apply(CW, 2, zscore)
   d <- as.data.frame(CWz)
-  d$cell_id <- as.integer(rownames(L))
+  d$cell_id <- rownames(L)
   d <- d |> inner_join(env, by = "cell_id")
   d <- d[stats::complete.cases(d[, c(CORE, names(PRED))]), ]
   if (nrow(d) < 100) next

@@ -1,0 +1,5 @@
+class,n,n_coded,pct_coded,pct_tolerant,used_for_inference
+Amphibia,438,295,67.4,33.9,TRUE
+Aves,1086,869,80,57.3,TRUE
+Mammalia,599,506,84.5,30.2,TRUE
+Reptilia,472,101,21.4,35.6,FALSE

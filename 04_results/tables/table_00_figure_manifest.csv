@@ -28,3 +28,7 @@ Extended Data,ED18,Fig13_occurrence_four_classes,Occurrence-based assemblages fo
 Extended Data,ED19,Fig14_conservation_gaps,Conservation gaps and reserve representation,TRUE,
 Extended Data,ED20,Fig15_sexual_dimorphism,Sexual size dimorphism across assemblages,TRUE,
 Extended Data,ED21,Fig2_trait_axes,Data-driven trait axes retained as a check on the a priori axes,TRUE,
+Extended Data,ED22,Fig6b_negative_control,"Three ways of measuring habitat heterogeneity, and the dose-response with thermal content",TRUE,
+Extended Data,ED23,Fig6c_family_threshold,"Which families enter the clade-level test, and how the threshold changes it",TRUE,
+Extended Data,ED24,Fig9_fd_and_nmds,Functional-diversity indices and unconstrained NMDS ordination,TRUE,
+Extended Data,ED25,Fig10_landuse_tolerance,"Land-use tolerance: which traits tolerate modification, and are they the protected ones",TRUE,
