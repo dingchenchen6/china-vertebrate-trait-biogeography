@@ -1,0 +1,4 @@
+class,n_cells,mean_frac_tolerant,rho_with_footprint,p
+Amphibia,1420,0.626,0.374,2.63e-48
+Aves,3772,0.696,0.3,1.51e-79
+Mammalia,3782,0.41,0.545,2.49e-291

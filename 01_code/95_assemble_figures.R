@@ -92,7 +92,15 @@ ED <- rbind(
   data.frame(num = "ED20", src = "Fig15_sexual_dimorphism",
              title = "Sexual size dimorphism across assemblages"),
   data.frame(num = "ED21", src = "Fig2_trait_axes",
-             title = "Data-driven trait axes retained as a check on the a priori axes"))
+             title = "Data-driven trait axes retained as a check on the a priori axes"),
+  data.frame(num = "ED22", src = "Fig6b_negative_control",
+             title = "Three ways of measuring habitat heterogeneity, and the dose-response with thermal content"),
+  data.frame(num = "ED23", src = "Fig6c_family_threshold",
+             title = "Which families enter the clade-level test, and how the threshold changes it"),
+  data.frame(num = "ED24", src = "Fig9_fd_and_nmds",
+             title = "Functional-diversity indices and unconstrained NMDS ordination"),
+  data.frame(num = "ED25", src = "Fig10_landuse_tolerance",
+             title = "Land-use tolerance: which traits tolerate modification, and are they the protected ones"))
 
 copy_set <- function(tab, dest) {
   ok <- logical(nrow(tab))

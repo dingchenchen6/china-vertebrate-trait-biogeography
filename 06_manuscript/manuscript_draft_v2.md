@@ -20,22 +20,28 @@ and each axis on six named predictors, one per classical biodiversity
 hypothesis, entering all six simultaneously so every coefficient is that
 hypothesis's unique effect. Climate dominates in all four classes (unique
 adjusted R² = 0.24–0.40), but its strength depends on thermoregulation: the
-effect of ambient energy is 2.35 times larger in ectotherms than in endotherms,
-whereas habitat heterogeneity — a predictor carrying no thermal information — is
-indistinguishable between them (1.03 times). That negative control separates
-thermal buffering from a generic difference in signal-to-noise, and a
-family-level test (n = 33 families) reproduces the asymmetry independently
-(1.79×, P = 0.017). All associations are re-tested with the fourth-corner max
+effect of ambient energy is about 2.3 times larger in ectotherms than in
+endotherms, and this holds under every specification we tried (1.98–2.63, each
+95% CI excluding 1). A single negative control proved insufficient: habitat
+heterogeneity behaves differently depending on how it is measured, and the one
+proxy showing an ectotherm excess is also the one most correlated with
+temperature. Tested instead as a trend, the ectotherm excess scales with how
+much temperature information a predictor carries (Spearman ρ = 0.74, P = 0.037
+across eight predictors) — a stronger prediction than the point it replaces. All associations are re-tested with the fourth-corner max
 test, which shows that naive community-weighted-mean regression inflates
 significance by 1.27–1.72×. Finally, we ask what this implies for spatial
 planning. China's nature reserve network occupies 10.36% of the land but leaves
 only 2.9% of species and 1.5% of functional bins at the Kunming–Montreal target
 of 30% of range protected; an optimal layout of the same area would reach 50.7%
 and 48.0%. The shortfall is directional rather than random: slow-paced and
-narrow-niched species are missed in three classes, and the body-size effect
-reverses between mammals (+0.283) and reptiles (−0.308) — a network built around
-large flagship mammals gives large reptiles no equivalent shelter. We provide
-the priority grid cells that close these gaps.
+wide-ranging generalist species are missed in three classes, and the body-size
+effect reverses between mammals (+0.283) and reptiles (−0.308) — a network built
+around large flagship mammals gives large reptiles no equivalent shelter. The
+generalist gap is not the alarming direction it first appears: using recorded
+use of artificial habitat as a direct trait-level measure of land-use tolerance,
+the species least able to persist in modified habitat are in fact the better
+protected, in all three classes with adequate coverage. We provide the priority
+grid cells that close the remaining gaps.
 
 **Keywords** functional biogeography · community-weighted moments · thermal
 buffering · fourth-corner · systematic conservation planning · 30×30
@@ -98,7 +104,8 @@ combining traits into composite axes help or hurt?
 its strength set by thermoregulatory mode?
 
 **Q3.** What does the answer require of conservation planning — where are the
-gaps, are they directional, and how much land would close them?
+gaps, are they directional, and how much land would close them? And do the
+under-protected trait ends coincide with sensitivity to land use?
 
 We state three hypotheses with their refutation conditions in advance
 (Supplementary Table S0), so that a negative result would be visible as such.
@@ -295,8 +302,10 @@ third of the priority network depends on the currency (Fig. 8e).
 Under-protection is not random. Of twelve axis coefficients, seven are
 significant after BH correction, and their directions are interpretable
 (Fig. 8c; Table 43). Slow-paced species are under-protected in mammals
-(−0.123) and amphibians (−0.182); narrow-niched species in mammals (−0.177)
-and, most strongly of all, amphibians (−0.240, P = 5 × 10⁻¹⁶). Body size
+(−0.123) and amphibians (−0.182). The niche axis runs from narrow to broad, so
+its negative coefficients in mammals (−0.177) and amphibians (−0.240,
+P = 5 × 10⁻¹⁶) identify **wide-ranging generalists**, not specialists, as the
+under-protected end; reptiles reverse (+0.211). Body size
 **reverses**: large mammals are better protected (+0.283) while large reptiles
 are under-protected (−0.308). This points to a specific historical cause — a
 reserve system sited around large flagship mammals — and it gives large reptiles
