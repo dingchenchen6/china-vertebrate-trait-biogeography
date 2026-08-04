@@ -312,6 +312,18 @@ reserve system sited around large flagship mammals — and it gives large reptil
 no equivalent shelter. No bird axis is significant; birds have the widest ranges
 and are the easiest to cover incidentally.
 
+Including amphibians in the gap analysis — they had been excluded on a trait-
+coverage argument that no longer applies — shows their gaps are almost
+disjoint from everyone else's. Jaccard overlap of gap cells is 0.315 for the
+two endotherm classes, 0.238 and 0.182 for reptiles against mammals and birds,
+but only 0.074 and 0.086 for amphibians against mammals and birds. Looking at
+birds or mammals will not find the amphibian gaps. A model-free institutional
+correlate points the same way: of China's 1,028 nature reserves, 17.9% name
+mammals and 12.8% name birds among their protection targets, against 3.2% for
+amphibians and 1.1% for reptiles. Only for mammals is functional richness
+positively associated with reserve coverage (+0.11); for reptiles it is
+negative (−0.05).
+
 ---
 
 ## 4. Discussion

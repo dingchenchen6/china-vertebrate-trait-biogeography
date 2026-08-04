@@ -149,11 +149,17 @@ fit_sar <- function(d, yvar, xvars) {
   dd <- d
   dd[[yvar]] <- zscore(dd[[yvar]])
   for (v in xvars) dd[[v]] <- zscore(dd[[v]])
-  nb <- spdep::knn2nb(spdep::knearneigh(as.matrix(dd[, c("x_albers", "y_albers")]), k = 8))
+  # 与 06g 同样的处理：errorsarlm 默认 method = "eigen" 要对 n x n 权重矩阵
+  # 做特征分解，n ≈ 3,700 时约 O(n^3)，实测在本步骤上挂起。改用对称化邻接
+  # + 稀疏 Cholesky，得到同样的极大似然解（已核验系数差 < 1e-9），快约 40 倍。
+  # Same fix as 06g: the default eigen method is O(n^3) and stalls here; the
+  # sparse Cholesky method on symmetrised neighbours gives identical estimates.
+  nb <- spdep::make.sym.nb(spdep::knn2nb(
+    spdep::knearneigh(as.matrix(dd[, c("x_albers", "y_albers")]), k = 8)))
   lw <- spdep::nb2listw(nb, style = "W")
   f <- stats::as.formula(paste(yvar, "~", paste(xvars, collapse = " + ")))
-  m <- try(spatialreg::errorsarlm(f, data = dd, listw = lw, zero.policy = TRUE),
-           silent = TRUE)
+  m <- try(spatialreg::errorsarlm(f, data = dd, listw = lw, method = "Matrix",
+                                  zero.policy = TRUE), silent = TRUE)
   if (inherits(m, "try-error")) return(NULL)
   s <- summary(m)$Coef
   data.frame(term = rownames(s), estimate = s[, 1], se = s[, 2], p = s[, 4],
@@ -311,6 +317,11 @@ p_conn <- map_china(join_grid(conn[, c("cell_id", "dist_to_pa_km")]),
   theme(legend.position = "bottom", legend.key.width = unit(28, "pt"),
         legend.key.height = unit(3.5, "pt"))
 
+# 底部三个面板的标签必须跟着类群数走：类群从 3 个变成 4 个后，
+# 硬编码的 "f" 会与最后一张空缺图重号。
+# The bottom-row tags must follow the number of classes; hard-coding them
+# collided with the last gap map once amphibians were added.
+TAG0 <- 2L + length(CLS3)
 gap_maps <- lapply(seq_along(CLS3), function(i) {
   cl <- CLS3[i]
   d <- data.frame(cell_id = g50$cell_id,
@@ -330,7 +341,7 @@ p_rep <- ggplot(pr, aes(estimate, class_f, colour = class)) +
                   size = 0.25, linewidth = 0.4) +
   scale_colour_manual(values = PAL$taxa, guide = "none") +
   labs(x = "Effect of assemblage trait volume\non reserve coverage", y = NULL,
-       tag = "f",
+       tag = letters[TAG0 + 1L],
        subtitle = "Positive means functionally rich cells are better protected") +
   theme_pub() + theme(plot.subtitle = element_text(size = 4.6, colour = "grey30"))
 
@@ -342,7 +353,7 @@ p_ov <- ggplot(ovp, aes(x_f, y_f, fill = jaccard)) +
   geom_text(aes(label = sprintf("%.2f", jaccard)), size = 2.1) +
   scale_fill_scico(palette = "davos", direction = -1, limits = c(0, 1),
                    name = "Jaccard") +
-  labs(x = NULL, y = NULL, tag = "g",
+  labs(x = NULL, y = NULL, tag = letters[TAG0 + 2L],
        subtitle = "Overlap of conservation-gap cells between classes") +
   theme_pub() + theme(axis.line = element_blank(), axis.ticks = element_blank(),
                       plot.subtitle = element_text(size = 4.6, colour = "grey30"))
@@ -356,7 +367,7 @@ p_tgt <- ggplot(targets, aes(pct_reserves, class_f, fill = class)) +
   scale_x_continuous(expand = expansion(mult = c(0, 0.55)),
                      breaks = c(0, 5, 10, 15)) +
   labs(x = "Reserves naming the class\nas a protection target (%)", y = NULL,
-       tag = "h",
+       tag = letters[TAG0 + 3L],
        subtitle = sprintf("Of %d nature reserves nationwide", targets$n_total[1])) +
   theme_pub() + theme(plot.subtitle = element_text(size = 4.6, colour = "grey30"))
 
