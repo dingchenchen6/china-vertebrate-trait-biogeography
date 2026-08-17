@@ -870,9 +870,9 @@ USA* 105, 6668–6672.
 Díaz, S. et al. (2016) The global spectrum of plant form and function.
 *Nature* 529, 167–171.
 
-Ding, C., Hu, Y., Li, C. & Jiang, Z. (2022) A dataset on the traits of
-terrestrial mammals in China. *Biodiversity Science* 30, 21520.
-[丁晨晨等, 中国陆生哺乳动物性状数据集]
+Ding, C., Hu, Y., Li, C. & Jiang, Z. (2022) A dataset on the morphological,
+life-history and ecological traits of the mammals in China. *Biodiversity
+Science* 30, 21520. [丁晨晨等]
 
 Dormann, C.F. et al. (2007) Methods to account for spatial autocorrelation in
 the analysis of species distributional data: a review. *Ecography* 30,
@@ -911,8 +911,9 @@ Healy, K., Ezard, T.H.G., Jones, O.R., Salguero-Gómez, R. & Buckley, Y.M.
 of age-specific mortality and reproduction. *Nature Ecology & Evolution* 3,
 1217–1224.
 
-Huang, M., Huang, G., Fan, H. et al. (2023) [Trait biogeography of Chinese
-terrestrial vertebrates]. *The Innovation* 4, 100371.
+Huang, M., Huang, G., Fan, H. & Wei, F. (2023) Influence of Last Glacial
+Maximum legacies on functional diversity and community assembly of extant
+Chinese terrestrial vertebrates. *The Innovation* 4, 100379.
 
 Huey, R.B. & Kingsolver, J.G. (1989) Evolution of thermal sensitivity of
 ectotherm performance. *Trends in Ecology & Evolution* 4, 131–135.
@@ -1066,8 +1067,8 @@ Slatyer, R.A., Hirst, M. & Sexton, J.P. (2013) Niche breadth predicts
 geographical range size: a general ecological pattern. *Ecology Letters* 16,
 1104–1114.
 
-Song, Y. et al. (2022) A dataset on the traits of amphibians in China.
-*Biodiversity Science* 30. [宋云枫等, 中国两栖动物性状数据集]
+Song, Y. et al. (2022) A dataset on the life-history and ecological traits
+of Chinese amphibians. *Biodiversity Science* 30, 22053. [宋云枫等]
 
 Soria, C.D., Pacifici, M., Di Marco, M., Stephen, S.M. & Rondinini, C. (2021)
 COMBINE: a coalesced mammal database of intrinsic and extrinsic traits.
@@ -1086,9 +1087,9 @@ Stuart, S.N., Chanson, J.S., Cox, N.A., Young, B.E., Rodrigues, A.S.L.,
 Fischman, D.L. & Waller, R.W. (2004) Status and trends of amphibian declines
 and extinctions worldwide. *Science* 306, 1783–1786.
 
-Sun, Y. et al. (2025) Environmental and evolutionary factors jointly shape
-life-history trait diversity of terrestrial vertebrates across China.
-*Zoological Research* 46.
+Sun, Z.-J., Sun, B.-J., Wang, Y.-P. et al. (2025) Environmental and
+evolutionary factors jointly shape life-history trait diversity of terrestrial
+vertebrates across China. *Zoological Research* 46, 983–995.
 
 Sunday, J.M., Bates, A.E. & Dulvy, N.K. (2011) Global analysis of thermal
 tolerance and latitude in ectotherms. *Proceedings of the Royal Society B*
@@ -1140,8 +1141,9 @@ Violle, C., Reich, P.B., Pacala, S.W., Enquist, B.J. & Kattge, J. (2014) The
 emergence and promise of functional biogeography. *Proceedings of the National
 Academy of Sciences USA* 111, 13690–13696.
 
-Wang, J. et al. (2023) A dataset on the traits of snakes in China.
-*Biodiversity Science* 31. [王江等, 中国蛇类性状数据集]
+Wang, J. et al. (2023) A dataset of the morphological, life-history, and
+ecological traits of snakes in China. *Biodiversity Science* 31, 23126.
+[王江等]
 
 Wright, D.H. (1983) Species-energy theory: an extension of species-area
 theory. *Oikos* 41, 496–506.
@@ -1157,5 +1159,5 @@ USA* 114, 1601–1606.
 Zelený, D. (2018) Which results of the standard test for community-weighted
 mean approach are too optimistic? *Journal of Vegetation Science* 29, 953–966.
 
-Zhong, Y. et al. (2022) A dataset on the traits of lizards in China.
-*Biodiversity Science* 30. [钟雨茜等, 中国蜥蜴性状数据集]
+Zhong, Y. et al. (2022) A dataset on the life-history and ecological traits
+of Chinese lizards. *Biodiversity Science* 30, 22071. [钟雨茜等]

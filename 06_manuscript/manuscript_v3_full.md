@@ -616,7 +616,7 @@ Hawkins, B.A. et al. (2003) Energy, water, and broad-scale geographic patterns
 of species richness. *Ecology* 84, 3105–3117.
 
 Huang, M. et al. (2023) [Chinese terrestrial vertebrate trait biogeography]
-*The Innovation* 4, 100371.
+*The Innovation* 4, 100379.
 
 Kerr, J.T. & Packer, L. (1997) Habitat heterogeneity as a determinant of mammal
 species richness in high-energy regions. *Nature* 385, 252–254.
