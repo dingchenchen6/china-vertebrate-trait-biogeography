@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 800" font-family="PingFang SC">
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" fill="#5A6B7A"/></marker>
+<marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M0,0 L10,5 L0,10 z" fill="#8A9AA8"/></marker>
+</defs>
+<rect width="1180" height="800" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1180" height="5" fill="#1F4E79"/>
+<text x="40" y="46" font-size="22" font-weight="bold" fill="#1F4E79">技术路线：补齐数据 → 辨析机制 → 验证动态 → 交付方案</text>
+<text x="40" y="70" font-size="14" fill="#5A6B7A">四项研究内容依次为下一项提供必要输入；每一项对应一个事先声明了证伪条件的假设</text>
+
+<!-- 内容一 -->
+<rect x="40" y="92" width="1100" height="96" fill="#EEF4F9" stroke="#5B8FB9"/>
+<rect x="40" y="92" width="6" height="96" fill="#5B8FB9"/>
+<text x="68" y="120" font-size="16" font-weight="bold" fill="#1F4E79">研究内容一 · 数据基础</text>
+<text x="68" y="146" font-size="14.5" fill="#333333">中文文献生活史补缺（爬行／两栖：成熟年龄、寿命 → 推导世代长度）</text>
+<text x="68" y="170" font-size="14.5" fill="#333333">时间分层群落矩阵（1980–2000 / 2001–2025）　·　Chao 样本覆盖度筛格</text>
+<text x="1116" y="120" font-size="13" fill="#5B8FB9" text-anchor="end">第 1 年</text>
+
+<line x1="330" y1="188" x2="330" y2="228" stroke="#5A6B7A" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="850" y1="188" x2="850" y2="228" stroke="#5A6B7A" stroke-width="1.6" marker-end="url(#a)"/>
+
+<!-- 内容二 -->
+<rect x="40" y="230" width="560" height="216" fill="#FCF1F0" stroke="#C0504D"/>
+<rect x="40" y="230" width="6" height="216" fill="#C0504D"/>
+<text x="68" y="258" font-size="16" font-weight="bold" fill="#1F4E79">研究内容二 · 机制辨析</text>
+<text x="572" y="258" font-size="13" fill="#C0504D" text-anchor="end">第 2 年</text>
+<text x="68" y="284" font-size="14.5" fill="#333333">海拔–纬度双梯度自然实验</text>
+<text x="68" y="310" font-size="14" fill="#555555">逐条样带实测热–非热变率比</text>
+<text x="68" y="336" font-size="14" font-style="italic" fill="#C0504D">Θ = sd(年均温) ÷ sd(非温度环境 PC1)</text>
+<text x="68" y="362" font-size="14" fill="#555555">检验三阶交互 温度 × 变温 × Θ</text>
+<rect x="68" y="378" width="504" height="52" fill="#FFFFFF" stroke="#E4C9C7"/>
+<text x="84" y="399" font-size="13.5" font-weight="bold" fill="#C0504D">H1 热学暴露</text>
+<text x="84" y="419" font-size="13" fill="#555555">证伪：超额响应与 Θ 无关 → 改采「普遍环境跟踪」解释</text>
+
+<!-- 内容三 -->
+<rect x="640" y="230" width="500" height="216" fill="#EFF5FA" stroke="#4A7FA5"/>
+<rect x="640" y="230" width="6" height="216" fill="#4A7FA5"/>
+<text x="668" y="258" font-size="16" font-weight="bold" fill="#1F4E79">研究内容三 · 时间动态</text>
+<text x="1116" y="258" font-size="13" fill="#4A7FA5" text-anchor="end">第 3 年</text>
+<text x="668" y="284" font-size="14.5" fill="#333333">CTI 漂移 ＋ 三条功能轴漂移</text>
+<text x="668" y="310" font-size="14" fill="#555555">热生态位固定于 1970–2000 常态</text>
+<text x="668" y="336" font-size="14" fill="#555555">气候债 ＝ ΔT − ΔCTI（取差，非比值）</text>
+<text x="668" y="362" font-size="14" fill="#555555">占据模型分离探测率与真实占据</text>
+<rect x="668" y="378" width="444" height="52" fill="#FFFFFF" stroke="#C9DAE7"/>
+<text x="684" y="399" font-size="13.5" font-weight="bold" fill="#4A7FA5">H2 空间–时间一致性</text>
+<text x="684" y="419" font-size="13" fill="#555555">证伪：时间趋势与空间推断排序不符 → 以时间证据为准</text>
+
+<line x1="600" y1="338" x2="640" y2="338" stroke="#8A9AA8" stroke-width="1.4" marker-end="url(#b)" marker-start="url(#b)"/>
+<text x="620" y="330" font-size="11.5" fill="#8A9AA8" text-anchor="middle">交叉</text>
+<text x="620" y="356" font-size="11.5" fill="#8A9AA8" text-anchor="middle">验证</text>
+
+<line x1="330" y1="446" x2="330" y2="500" stroke="#5A6B7A" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="850" y1="446" x2="850" y2="500" stroke="#5A6B7A" stroke-width="1.6" marker-end="url(#a)"/>
+<text x="590" y="478" font-size="13" fill="#5A6B7A" text-anchor="middle">类群特异的响应系数</text>
+
+<!-- 内容四 -->
+<rect x="40" y="502" width="1100" height="156" fill="#F0F7F2" stroke="#4F8A5B"/>
+<rect x="40" y="502" width="6" height="156" fill="#4F8A5B"/>
+<text x="68" y="530" font-size="16" font-weight="bold" fill="#1F4E79">研究内容四 · 保护应用</text>
+<text x="1116" y="530" font-size="13" fill="#4F8A5B" text-anchor="end">第 4 年</text>
+<text x="68" y="556" font-size="14.5" fill="#333333">SSP1-2.6 / SSP5-8.5 情景下投影 2050、2070 年群落功能组成</text>
+<text x="68" y="582" font-size="14.5" fill="#333333">三套优先区方案：静态（当前格局）· 动态（纳入未来组成）· 稳健（两者同时达标）</text>
+<text x="68" y="608" font-size="14.5" fill="#333333">识别气候避难所与转型区，交付可用于国土空间规划的空间图层</text>
+<rect x="68" y="622" width="1044" height="24" fill="#FFFFFF" stroke="#CBE0D2"/>
+<text x="84" y="639" font-size="13" fill="#555555"><tspan font-weight="bold" fill="#4F8A5B">H3 动态失配</tspan>　证伪：动态与静态方案高度重合（Jaccard &gt; 0.8）或达标率无变化 → 动态规划无附加价值，以静态方案为准</text>
+
+<!-- 产出 -->
+<rect x="40" y="690" width="1100" height="70" fill="#1F4E79"/>
+<text x="68" y="716" font-size="14.5" fill="#FFFFFF">产出　SCI 论文 4–6 篇（一区 ≥ 3）　·　中国爬行／两栖类生活史数据集 1 套　·　保护优先区图层与决策工具 1 套（开源）</text>
+<text x="68" y="742" font-size="14.5" fill="#B9D9F2">　　　　面向自然资源与生态环境管理部门的政策建议报告 1 份　·　全部代码固定随机种子、结果可完全复现</text>
+</svg>

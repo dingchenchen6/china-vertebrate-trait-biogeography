@@ -39,9 +39,10 @@ Applying the framework to spatial planning, China's nature reserves occupy
 10.36% of the land yet leave only 2.9% of species and 1.5% of functional bins
 at the Kunming–Montreal target of 30% of range protected; an optimal layout of
 the same area would reach 50.7% and 48.0%. The shortfall is directional: the
-body-size effect reverses between mammals (+0.283) and reptiles (−0.307), and
-amphibian gaps are nearly disjoint from those of other classes (Jaccard
-0.074–0.086 versus 0.315 between the two endotherm classes). A model-free
+body-size effect reverses between mammals (+0.283) and reptiles (−0.308), and
+amphibian gaps are nearly disjoint from those of the endotherm classes
+(Jaccard 0.074 and 0.086, versus 0.315 between birds and mammals) and only
+weakly aligned with reptile gaps (0.160). A model-free
 correlate points the same way — of 1,028 reserves, 17.9% name mammals as a
 protection target against 1.1% for reptiles. We deliver the priority cells that
 close these gaps.
@@ -238,12 +239,15 @@ vertical stratum use, habitat breadth and range size in all four classes.
 
 Life-history coverage was audited before use (Supplementary Table 36).
 Generation length exists essentially only for endotherms (birds 80.8%, mammals
-92.2%; both ectotherm classes 0%), and ectotherm age at maturity and longevity
-are 7–24% observed. **Fecundity is the only fast–slow component usable across
+92.2%; both ectotherm classes 0%). Age at maturity is observed for 7.1% of
+amphibians and for no reptile in the dataset; longevity for 23.5% of reptiles
+and 8.4% of amphibians. **Fecundity is the only fast–slow component usable across
 all four classes** (reptiles 66.9%, amphibians 60.0%, birds and mammals 100%).
-Range notation in the Chinese sources ("729–1320") was parsed to interval
-midpoints; this correction alone raised usable amphibian sex-specific lengths
-from 76 to 472 species.
+Sex-specific lengths in the Chinese amphibian compilation are mostly written
+as ranges ("350.0-417.0"). Parsing them to interval midpoints rather than
+coercing them directly raised usable male–female pairs from 75 to 472 species;
+stripping non-numeric characters instead, as is often done, would have
+concatenated "145-191" into 145191 mm.
 
 ### 2.4 Imputation and its limits
 
@@ -547,9 +551,12 @@ protection converts least readily into functional protection.
 
 Conservation **gaps** separate the classes even more sharply. Jaccard overlap
 of gap cells is 0.315 for the two endotherm classes, 0.238 and 0.182 for
-reptiles against mammals and birds, but **0.074 and 0.086** for amphibians
-against mammals and birds (Supplementary Table 28). Looking at birds or mammals
-will not find the amphibian gaps.
+reptiles against mammals and birds, **0.074 and 0.086** for amphibians
+against mammals and birds, and 0.160 for amphibians against reptiles
+(Supplementary Table 28). The ordering follows thermoregulatory mode: amphibian
+gaps overlap the other ectotherm class about twice as much as they overlap
+either endotherm class — but even that is half the bird–mammal value. Looking
+at birds or mammals will not find the amphibian gaps.
 
 A model-free institutional correlate points the same way. Of China's 1,028
 nature reserves, 17.9% name mammals among their protection targets and 12.8%
@@ -586,7 +593,7 @@ niche axis runs narrow to broad, so its negative coefficients in mammals
 (−0.177) and amphibians (−0.240, *P* = 5 × 10⁻¹⁶) identify **wide-ranging
 generalists**, not specialists, as the under-protected end; reptiles reverse
 (+0.211). Body size also **reverses**: large mammals are better protected
-(+0.283, *P* = 7 × 10⁻¹⁵) while large reptiles are under-protected (−0.307,
+(+0.283, *P* = 7 × 10⁻¹⁵) while large reptiles are under-protected (−0.308,
 *P* = 2 × 10⁻¹⁰). No bird axis is significant; birds have the widest ranges and
 are the easiest to cover incidentally. H3 is not refuted.
 
@@ -688,7 +695,7 @@ that secretly carries temperature) can masquerade as mechanism.
 
 The reserve network's functional gap has a sign, and the sign has a history.
 Large mammals are the best-protected trait end (+0.283) while large reptiles
-are the worst (−0.307) — precisely what a network assembled around flagship
+are the worst (−0.308) — precisely what a network assembled around flagship
 mammal conservation would produce, and consistent with the global neglect of
 reptiles in assessment and protection (Böhm et al. 2013; Roll et al. 2017; Cox
 et al. 2022). The designation record makes the mechanism legible without any
@@ -697,7 +704,8 @@ reptiles. This institutional signature matters because it is addressable by
 policy, not just by land.
 
 Amphibians sharpen the surrogacy warning to its limit. Their gap cells overlap
-other classes' by 0.074–0.086 — versus 0.315 between birds and mammals — so no
+those of birds and mammals by 0.074 and 0.086, and those of reptiles by 0.160 —
+versus 0.315 between birds and mammals — so no
 amount of bird- or mammal-based planning will find them (Rodrigues & Brooks
 2007). Given the global amphibian decline (Stuart et al. 2004; Luedtke et al.
 2023), amphibian priorities must be derived from amphibian data; in China those
