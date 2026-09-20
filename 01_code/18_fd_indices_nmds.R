@@ -243,7 +243,8 @@ pa <- ggplot(SC, aes(NMDS1, NMDS2)) +
             colour = "grey35") +
   facet_wrap(~class_f, nrow = 1, scales = "free") +
   labs(tag = "a",
-       subtitle = "Unconstrained ordination of assemblage trait composition, with environmental vectors fitted afterwards (BH-adjusted P < 0.05)") +
+       subtitle = paste0("Unconstrained ordination of assemblage trait composition,\n",
+                         "with environmental vectors fitted afterwards (BH-adjusted P < 0.05)")) +
   theme_pub() +
   theme(legend.position = "bottom", legend.key.width = unit(30, "pt"),
         legend.key.height = unit(3.5, "pt"), strip.text = element_text(size = 6.5),
@@ -262,7 +263,8 @@ pb <- ggplot(fd_env, aes(idx_f, hyp_f, fill = estimate)) +
                    oob = scales::squish, name = "Standardised effect") +
   facet_wrap(~class_f, nrow = 1) +
   labs(x = NULL, y = NULL, tag = "b",
-       subtitle = "Three functional-diversity indices against the same six hypotheses: the sign is consistent across indices") +
+       subtitle = paste0("Three functional-diversity indices against the same six\n",
+                         "hypotheses: the sign is consistent across indices")) +
   theme_pub() +
   theme(axis.text.x = element_text(size = 4.8, angle = 45, hjust = 1),
         axis.text.y = element_text(size = 5), axis.line = element_blank(),

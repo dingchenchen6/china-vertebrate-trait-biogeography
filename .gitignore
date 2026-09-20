@@ -53,3 +53,8 @@ _scout/
 # 本地代理配置与散落文件 / local agent config and stray files
 .claude/
 Rplots.pdf
+
+# 投稿包中的图件是 05_figures/ 的重命名副本，由 09_submission/assemble_figures.R 生成
+# Submission figures are renamed copies of 05_figures/; regenerate with assemble_figures.R
+09_submission/03_main_figures/
+09_submission/04_extended_data/

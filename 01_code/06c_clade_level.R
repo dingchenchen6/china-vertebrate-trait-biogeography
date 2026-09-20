@@ -52,6 +52,20 @@ N_NULL_C     <- 499L   # 目级零模型次数（目数量多，适度降低）/
 N_CORES      <- max(1L, parallel::detectCores() - 2L)
 CORE_ALL4    <- c("body_mass", "body_length", "nocturnality", "verticality",
                   "habitat_breadth", "range_size")
+
+# 体型量度的口径 / which size measure enters the size response
+#   "mass"     : 四纲一律用体重（沿用 05 的既有口径，为默认，保证既有结果可复现）
+#   "perclass" : 与主分析（03d_trait_axes.R 的 SIZE_TRAIT）一致的每纲量度——
+#                两栖类改用体长，因为其体重 74.7% 由异速关系推算（table_S3），
+#                且两栖类 CWM 体重与体长仅相关 r = 0.76，量度选择并非无关紧要。
+# "perclass" matches the main analysis: amphibian mass is 74.7% allometrically
+# derived, and amphibian CWM mass and length correlate only r = 0.76, so the
+# choice of measure is not cosmetic.
+SIZE_MODE    <- Sys.getenv("CLADE_SIZE", "mass")
+SIZE_TRAIT   <- c(Aves = "body_mass", Mammalia = "body_mass",
+                  Reptilia = "body_mass", Amphibia = "body_length")
+size_trait_for <- function(cl)
+  if (identical(SIZE_MODE, "perclass")) SIZE_TRAIT[[cl]] else "body_mass"
 PRED <- c("ax_thermal", "ax_water", "ax_productivity", "ax_structure", "ax_human")
 
 traits <- readRDS(file.path(PATH$derived, "traits_imputed.rds"))
@@ -206,13 +220,19 @@ for (cl in TAXA$class) {
     m <- try(clade_metrics(sp_pool, sub), silent = TRUE)
     if (inherits(m, "try-error") || is.null(m)) { log_msg("   [skip] ", od); next }
     dd <- m |> left_join(env, by = "cell_id")
-    resp_set <- intersect(c("SES.FDis", "SES.RaoQ", "SES.body_mass.mean",
-                            "SES.body_mass.var", "SES.habitat_breadth.mean",
+    st <- size_trait_for(cl)
+    resp_set <- intersect(c("SES.FDis", "SES.RaoQ",
+                            paste0("SES.", st, ".mean"), paste0("SES.", st, ".var"),
+                            "SES.habitat_breadth.mean",
                             "SES.habitat_breadth.var"), names(dd))
     for (r in resp_set) {
       co <- try(fit_sar_simple(dd, r), silent = TRUE)
       if (inherits(co, "try-error") || is.null(co)) next
-      co$class <- cl; co$clade <- od; co$order <- tab$order[i]; co$response <- r
+      # 跨纲汇总时必须比较同一个「量」，故把体型响应统一改名为 SES.size.*
+      # Rename the size response to a class-neutral label so the cross-class
+      # contrast compares body size, not two different measurements.
+      r_lab <- sub("^SES[.](body_mass|body_length)[.]", "SES.size.", r)
+      co$class <- cl; co$clade <- od; co$order <- tab$order[i]; co$response <- r_lab
       co$n_species <- tab$n_sp[i]
       results[[length(results) + 1]] <- co
     }

@@ -1,3 +1,13 @@
+> **⚠️ 已作废 / SUPERSEDED（2026-09-20）**
+>
+> 本文件是**零模型修正之前**的草稿图注，编号（Fig 1–14）与最终的 Fig 1–8 + ED 1–25
+> 不对应，且包含已被修正的数值：3,814 格（应为 3,782）、Wilcoxon *P* = 0.010
+> （应为 0.019）、保护地覆盖 10.31%（应为 10.36%）、爬行–两栖 *r* = −0.07
+> （占据度加权零模型下为 0.33–0.40）等。
+>
+> **投稿请使用** [`09_submission/02_manuscript/figure_legends.md`](../09_submission/02_manuscript/figure_legends.md)。
+> 本文件仅作为早期草稿的记录保留。
+
 # 图件说明 / Figure captions
 
 所有图件同时输出矢量 PDF 与 600 dpi PNG，尺寸按 Nature 规格（双栏 183 mm，字号 7 pt，Helvetica）。

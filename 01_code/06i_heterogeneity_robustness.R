@@ -271,7 +271,9 @@ pa <- ggplot(pl, aes(proxy_f, ratio, fill = predictor)) +
   scale_x_discrete(labels = function(x) gsub(" \\(", "\n(", x)) +
   scale_y_continuous(expand = expansion(mult = c(0, 0.14))) +
   labs(x = NULL, y = "Effect ratio, ectotherms / endotherms", tag = "a",
-       subtitle = "Ambient energy shows a consistent ~2x ectotherm excess under all three specifications; the heterogeneity ratio is unstable and straddles 1. Bars: 95% bootstrap CI over class x response fits.") +
+       subtitle = paste0("Ambient energy shows a consistent ~2x ectotherm excess under\n",
+                         "all three specifications; the heterogeneity ratio is unstable\n",
+                         "and straddles 1. Bars: 95% bootstrap CI over class x response fits.")) +
   theme_pub() + theme(legend.position = "bottom",
                       axis.text.x = element_text(size = 5.5),
                       plot.subtitle = element_text(size = 4.6, colour = "grey30"))

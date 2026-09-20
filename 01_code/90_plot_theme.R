@@ -69,10 +69,17 @@ PAL <- list(
   # 发散量（SES、效应量）/ diverging, centred on zero
   div      = function(...) scico::scale_fill_scico(palette = "vik", midpoint = 0, ...),
   div_col  = function(...) scico::scale_colour_scico(palette = "vik", midpoint = 0, ...),
-  # 类群配色：恒温=暖色，变温=冷色 / taxa: endotherms warm, ectotherms cool
+  # 编码规则 / encoding rule:
+  #   色相 = 类群身份；明度 = 体温调节模式。
+  #   先前把 thermal 的两色直接取自 taxa（恒温=鸟类红、变温=爬行蓝），
+  #   结果在 Fig1 与 Fig6 里同一个红既表示「鸟类」又表示「恒温动物」。
+  #   一个颜色只承担一个含义，故体温调节模式改用中性明度对比。
+  #   Hue encodes class identity; lightness encodes thermoregulatory mode.
+  #   The thermal pair previously reused the bird red and reptile blue, so the
+  #   same red meant both "birds" and "endotherms" within a single figure.
   taxa     = c(Aves = "#C1442E", Mammalia = "#E8A33D",
                Reptilia = "#3B7EA1", Amphibia = "#4C9F70"),
-  thermal  = c(Endotherm = "#C1442E", Ectotherm = "#3B7EA1")
+  thermal  = c(Endotherm = "#4D4D4D", Ectotherm = "#B3B3B3")
 )
 
 TAXA_LAB <- c(Aves = "Birds", Mammalia = "Mammals",

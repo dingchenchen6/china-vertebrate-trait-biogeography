@@ -421,7 +421,10 @@ pa1 <- ggplot(curves, aes(area_pct, bin_pct, colour = strategy)) +
   coord_cartesian(xlim = c(0, 45)) +
   labs(x = "Land area selected (%)", y = "Functional bins meeting the 30% target (%)",
        tag = "a",
-       subtitle = "At a tight budget (10–17% of land) the trait target covers 10–12 more percentage points of functional space than the species target; by 30% they converge. Grey band: 95% of random selections.") +
+       subtitle = paste0("At a tight budget (10–17% of land) the trait target covers\n",
+                         "10–12 more percentage points of functional space than the\n",
+                         "species target; by 30% they converge.\n",
+                         "Grey band: 95% of random selections.")) +
   theme_pub() + theme(legend.position = "bottom",
                       plot.subtitle = element_text(size = 4.6, colour = "grey30")) +
   guides(colour = guide_legend(nrow = 3, byrow = TRUE))
@@ -439,7 +442,8 @@ pa2 <- ggplot(curves, aes(area_pct, species_pct, colour = strategy)) +
   scale_colour_manual(values = PAL_ST, name = NULL, guide = "none") +
   coord_cartesian(xlim = c(0, 45)) +
   labs(x = "Land area selected (%)", y = "Species meeting the 30% target (%)", tag = "b",
-       subtitle = "Complementarity beats richness ranking by ~9 points at the 30% budget; the existing network reaches 3%.") +
+       subtitle = paste0("Complementarity beats richness ranking by ~9 points\n",
+                         "at the 30% budget; the existing network reaches 3%.")) +
   theme_pub() + theme(plot.subtitle = element_text(size = 4.6, colour = "grey30"))
 
 # (c) 被系统性保护不足的性状端
@@ -459,7 +463,9 @@ pa3 <- ggplot(und, aes(axis_f, estimate, fill = class)) +
             show.legend = FALSE) +
   scale_fill_manual(values = PAL$taxa, labels = TAXA_LAB, name = NULL) +
   labs(x = NULL, y = "Effect on protected fraction (logit scale)", tag = "c",
-       subtitle = "Negative = the high end of that axis is under-protected. Quasi-binomial GLM weighted by range area, controlling range size. * BH-adjusted P < 0.05.") +
+       subtitle = paste0("Negative = the high end of that axis is under-protected.\n",
+                         "Quasi-binomial GLM weighted by range area, controlling\n",
+                         "range size. * BH-adjusted P < 0.05.")) +
   theme_pub() + theme(legend.position = "bottom",
                       plot.subtitle = element_text(size = 4.4, colour = "grey30"))
 

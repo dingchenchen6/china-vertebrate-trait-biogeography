@@ -144,17 +144,26 @@ fig2 <- function() {
   # 这是跨性状、跨类群可比的前提；坐标标签必须如实标注。
   # NOTE: traits are z-standardised WITHIN each class before the moments are
   # computed, so CWM is in within-class SD units. Label accordingly.
-  tlab <- c(body_mass.mean = "CWM body mass (within-class z)",
+  tlab <- c(body_mass.mean = "CWM body size (within-class z)",
             habitat_breadth.mean = "CWM habitat breadth (within-class z)",
             nocturnality.mean = "CWM nocturnality (within-class z)")
+  # 体型行按「每纲一个量度」取值，与 03d_trait_axes.R 的 SIZE_TRAIT 一致：
+  # 两栖类体重 74.7% 由异速关系推算，若四纲一律画体重，两栖那一格画的
+  # 其实是体长的一个单调变换，标注为「body mass」会误导读者。
+  # The size row uses one measure per class, matching the trait protocol:
+  # amphibian mass is 74.7% allometrically derived, so length is used there.
+  SIZE_BY_CLASS <- c(Aves = "body_mass", Mammalia = "body_mass",
+                     Reptilia = "body_mass", Amphibia = "body_length")
   tags <- letters
   k <- 0L
   panels <- list()
   for (tv in traits_show) {
     for (cl in TAXA$class) {
       d <- m50 |> filter(class == cl)
-      if (!tv %in% names(d)) next
-      dd <- d |> select(cell_id, val = all_of(tv))
+      tv_cl <- if (tv == "body_mass.mean")
+        paste0(SIZE_BY_CLASS[[cl]], ".mean") else tv
+      if (!tv_cl %in% names(d)) next
+      dd <- d |> select(cell_id, val = all_of(tv_cl))
       if (!sum(is.finite(dd$val))) next
       k <- k + 1L
       panels[[length(panels) + 1]] <-
@@ -318,7 +327,7 @@ fig4 <- function() {
                    linewidth = 0.35) +
     geom_point(size = 1) +
     scale_colour_manual(values = PAL$taxa, labels = TAXA_LAB, name = NULL) +
-    labs(x = "Effect of thermal energy on CWM body mass",
+    labs(x = "Effect of thermal energy on CWM body mass (within-class z)",
          y = NULL, tag = "c") +
     theme_pub() +
     theme(axis.text.y = element_text(size = 4.2),
