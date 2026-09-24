@@ -2,9 +2,11 @@
 
 **To the Editors, *Nature Ecology & Evolution***
 
-*(Re-target as needed. The manuscript is formatted to the Nature-family convention —
-Extended Data figures plus Supplementary Information — so *Nature Communications*,
-*Ecology Letters* and *Global Ecology and Biogeography* need only the front matter changed.)*
+*(Written for* Nature Ecology & Evolution*. Figures, Extended Data figures and
+Supplementary Tables are numbered in order of first citation, as all candidate journals
+require. The section order (Methods before Results), author–year references and Discussion
+subheadings follow ecology-journal convention and must be converted for a Nature-family
+submission; see `07_submission_checklist.md` for the full list of format gaps.)*
 
 ---
 
@@ -55,10 +57,13 @@ hypothesis, and one of them was nearly met: ectotherms respond more strongly to 
 six predictors, not only to thermal ones. We report the thermal-buffering hypothesis as
 **partially supported** rather than confirmed, replace the failed single negative control
 with a dose–response test across eight predictors (ρ = 0.74, *P* = 0.037), and carry that
-qualification into the abstract and the conclusions. Three earlier claims were withdrawn
-or narrowed during internal review after they failed their own checks, and the paper says
-so. We believe this makes the surviving claims more, not less, credible, and the
-Limitations section states what the design cannot settle.
+qualification into the abstract and the conclusions. Where earlier analyses failed their own
+checks, the paper reports the correction rather than the original result: an apparent
+amphibian over-dispersion signal disappeared once the null model weighted species by
+occupancy (+1.70 to +0.08), and a claim that range maps understate anthropogenic effects
+held only for birds once identical cells were compared, and is stated that narrowly. We
+believe this makes the surviving claims more, not less, credible, and the Limitations
+section states what the design cannot settle.
 
 **Data and code.** All code, documentation, figures and aggregated per-cell results are
 public. IUCN Red List range polygons may not be redistributed, so species-by-cell matrices

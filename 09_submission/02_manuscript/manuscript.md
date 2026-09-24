@@ -7,45 +7,30 @@ Correspondence: jialeding1220@gmail.com
 
 **Running title** Thermal mode and vertebrate trait biogeography
 
-**Word count** Main text ~8,000 | Figures 8 | Extended Data figures 25 | References 100
+**Word count** Abstract 198 | Main text 4,298 (Introduction 1,244, Results 1,791, Discussion 1,263) | Methods 2,258 | Figures 8 | Extended Data figures 25 | Supplementary Tables 28 | References 100
 
 ---
 
 ## Abstract
 
-Trait-based biogeography routinely collapses many traits into one composite axis
-and asks which environmental gradient explains it. We show that both steps
-discard information, and that what is discarded matters for conservation. Using
-2,837 species of Chinese terrestrial vertebrates across 3,782 50-km cells —
-2,595 of them with complete trait data — we define three functional axes
-*a priori* — body size, slow–fast pace of life and niche breadth — so each axis
-denotes the same quantity in birds, mammals, reptiles and amphibians. The axes
-are near-independent (|r| ≤ 0.30) and, contrary to common practice, combining
-traits into a composite axis *weakens* the environmental signal in six of eight
-comparisons. Regressing each trait and each axis on six named predictors, one
-per classical biodiversity hypothesis, climate dominates in all four classes
-(unique adjusted *R*² = 0.24–0.40), but its strength depends on
-thermoregulation: ambient energy affects ectotherms about 2.3× more strongly
-than endotherms, robustly across specifications (1.98–2.63; every 95% CI
-excluding 1). A single negative control proved insufficient — heterogeneity
-proxies differ in how much temperature information they carry — so we tested the
-prediction as a trend instead: the ectotherm excess scales with a predictor's
-thermal content (Spearman ρ = 0.74, *P* = 0.037, eight predictors). Ectotherms
-nonetheless respond more strongly to five of six predictors, so we report
-thermal buffering as partially supported rather than established. All
-associations were re-tested with the fourth-corner max test, which shows naive
-community-weighted-mean regression inflates significance by 1.27–1.72×.
-Applying the framework to spatial planning, China's nature reserves occupy
-10.36% of the land yet leave only 2.9% of species and 1.5% of functional bins
-at the Kunming–Montreal target of 30% of range protected; an optimal layout of
-the same area would reach 50.7% and 48.0%. The shortfall is directional: the
-body-size effect reverses between mammals (+0.283) and reptiles (−0.308), and
-amphibian gaps are nearly disjoint from those of the endotherm classes
-(Jaccard 0.074 and 0.086, versus 0.315 between birds and mammals) and only
-weakly aligned with reptile gaps (0.160). A model-free
-correlate points the same way — of 1,028 reserves, 17.9% name mammals as a
-protection target against 1.1% for reptiles. We deliver the priority cells that
-close these gaps.
+Trait-based biogeography usually collapses many traits into one composite axis
+and then asks which environmental gradient explains it. Using 2,837 terrestrial
+vertebrate species across 3,782 50-km cells of China, we show that both steps
+discard information that conservation planning needs. Three functional axes
+defined *a priori* — body size, pace of life and niche breadth — are
+near-independent within every class (|*r*| ≤ 0.30), and combining traits into a
+composite weakens the environmental signal in six of eight comparisons. Climate
+dominates trait composition in all four classes, but thermoregulation sets its
+strength: ambient energy affects ectotherm assemblages about 2.3 times more than
+endotherm assemblages (1.98–2.63 across specifications). Because ectotherms also
+respond more strongly to five of six predictors, we report thermal buffering as
+partially supported; the ectotherm excess nonetheless scales with a predictor's
+thermal content (Spearman ρ = 0.74). Under the fourth-corner max test, naive
+regression inflates significance 1.27–1.72-fold. China's nature reserves cover
+10.36% of the land but bring only 2.9% of species to the Kunming–Montreal
+30%-of-range target, against 50.7% for an optimal layout of the same area. The
+shortfall has a direction: large mammals are the best-protected trait end and
+large reptiles the worst. We map the cells that close these gaps.
 
 **Keywords** functional biogeography; community-weighted mean; thermal
 buffering; fourth-corner; systematic conservation planning; Kunming–Montreal
@@ -79,7 +64,7 @@ routinely compress traits into a leading principal component or a multivariate
 index before asking what drives them. Two problems follow. First, a within-class
 PCA is free to rotate differently in every class: in our data PC1 is dominated
 by niche breadth in birds and amphibians, by body size and fecundity in
-reptiles, and by vertical stratum use in mammals (Extended Data Fig. 21), so
+reptiles, and by vertical stratum use in mammals (Extended Data Fig. 1), so
 comparing "PC1" across classes compares four different quantities. Whether a
 fixed, *a priori* set of axes — the assemblage-level analogue of the plant
 strategy schemes that made cross-taxon comparison possible in botany (Díaz et
@@ -147,7 +132,7 @@ global compilations above, give ectotherms a usable trait baseline for the
 first time.
 
 We therefore ask three questions, stating hypotheses and their refutation
-conditions in advance (Supplementary Table S0).
+conditions in advance (Supplementary Table 1).
 
 **Q1 (Dimensions).** Is assemblage trait structure one dimension or several, and
 does combining traits into composite axes help or hurt?
@@ -159,7 +144,7 @@ across them.
 **Q2 (Drivers).** Which biodiversity hypothesis governs assemblage trait
 structure, and is its strength set by thermoregulatory mode?
 *H2:* endothermy buffers assemblage trait composition against thermal
-filtering. *Refuted if* ectotherms respond more strongly to *all* predictors —
+filtering (Fig. 1a). *Refuted if* ectotherms respond more strongly to *all* predictors —
 indicating a signal-to-noise difference rather than a mechanism — or if the
 asymmetry disappears under a different replication unit.
 
@@ -200,21 +185,23 @@ national basemap, including the inset.
 
 Expert range maps (IUCN 2024; BirdLife International & HBW 2022) were
 rasterised to the grid, giving 1,177 birds, 631 mammals, 520 reptiles and 509
-amphibians in the assemblage matrix (2,837 species). Of these, 2,595 species
+amphibians in the assemblage matrix (2,837 species; Fig. 1b–f). Of these, 2,595 species
 (1,086 birds, 599 mammals, 472 reptiles, 438 amphibians) have complete values
 for all six core traits and therefore carry functional-axis scores; assemblage
 moments are computed from this subset, and the two counts are kept distinct
 throughout. Scientific names were harmonised across trait and range sources by
 a normalisation routine (trimming, capitalisation, subspecies removal) followed
-by synonym matching; unmatched names are listed in Supplementary Table S3b–c.
+by synonym matching; unmatched names are listed in Supplementary Tables 2–3.
 
-Assemblage metrics were computed only for cells holding ≥5 species of a class.
+Assemblage moments entering the driver models and trait maps were restricted to
+cells holding ≥5 species of a class; functional-dispersion metrics, which need
+only two, were computed wherever a class had at least two species.
 The resulting blanks — most visibly for amphibians in arid north-west China,
 where only 2.6% of far-western cells reach five species — are estimability
 limits, not absences. Range maps overstate local occupancy (Hurlbert-type
 commission error); we use them because they are the basis on which the
 antecedent studies are comparable, and we validate the main conclusions against
-assemblages rebuilt from GBIF occurrence records (Extended Data Figs 17–18),
+assemblages rebuilt from GBIF occurrence records (Extended Data Figs 2–3),
 where conclusions hold in direction.
 
 ### 2.3 Trait compilation: one size measure per class
@@ -229,15 +216,16 @@ snake and lizard datasets for reptiles (Oskyrko et al. 2024; Wang et al. 2023;
 Zhong et al. 2022), and AmphiBIO plus a national amphibian dataset for
 amphibians (Oliveira et al. 2017; Song et al. 2022).
 
-We used **one size measure per class** — body mass for endotherms, body length
-for ectotherms — because mixing mass and length makes "size" a different
+We used **one size measure per class** — body length for amphibians, body mass
+for birds, mammals and reptiles — because mixing mass and length makes "size" a different
 quantity in different classes and invalidates cross-class comparison. This
 choice also removes a large imputation artefact: amphibian body *mass* in the
 global backbone is 74.7% allometrically inferred, whereas amphibian body
-*length* is 0.7% imputed. Observed coverage is 100% for size, nocturnality,
+*length* is 0.7% imputed. Reptile body mass, by contrast, is only 0.2% inferred
+(Extended Data Fig. 4), so mass is retained there. Observed coverage is 100% for size, nocturnality,
 vertical stratum use, habitat breadth and range size in all four classes.
 
-Life-history coverage was audited before use (Supplementary Table 36).
+Life-history coverage was audited before use (Supplementary Table 4).
 Generation length exists essentially only for endotherms (birds 80.8%, mammals
 92.2%; both ectotherm classes 0%). Age at maturity is observed for 7.1% of
 amphibians and for no reptile in the dataset; longevity for 23.5% of reptiles
@@ -247,7 +235,8 @@ Sex-specific lengths in the Chinese amphibian compilation are mostly written
 as ranges ("350.0-417.0"). Parsing them to interval midpoints rather than
 coercing them directly raised usable male–female pairs from 75 to 472 species;
 stripping non-numeric characters instead, as is often done, would have
-concatenated "145-191" into 145191 mm.
+concatenated "145-191" into 145191 mm. The resulting sexual-size-dimorphism
+geography is reported in Extended Data Fig. 5.
 
 ### 2.4 Imputation and its limits
 
@@ -283,8 +272,7 @@ general association (Slatyer et al. 2013); its geographic behaviour connects to
 classical range-size gradients (Stevens 1989). Nocturnality and vertical
 stratum use were kept as single traits — they are not homologous components of
 any of the three axes. Traits were z-standardised within class before axis
-construction, and the data-driven PCA is retained as a check (Extended Data
-Fig. 21).
+construction, and the data-driven PCA is retained as a check (Extended Data Fig. 1).
 
 ### 2.6 Environmental predictors and hypothesis mapping
 
@@ -299,8 +287,7 @@ human footprint from the 2000–2020 annual series (Mu et al. 2022; lineage
 Venter et al. 2016). We deliberately use named variables rather than composite
 components, so each coefficient reads directly as support for one hypothesis;
 all six enter every model together, making each coefficient that hypothesis's
-unique effect after the others are controlled (VIF ≤ 5.4; Supplementary Table
-38b).
+unique effect after the others are controlled (VIF ≤ 5.4; Supplementary Table 5).
 
 ### 2.7 Assemblage metrics and null models
 
@@ -308,14 +295,15 @@ For each cell × class we computed community-weighted moments (mean, variance,
 skewness, kurtosis) of each trait and axis, and functional diversity as
 functional richness, evenness, divergence, dispersion and Rao's quadratic
 entropy (Mason et al. 2005; Villéger et al. 2008; Laliberté & Legendre 2010;
-Botta-Dukát 2005) on Gower distances. Standardised effect sizes used 999
+Botta-Dukát 2005) on Gower distances (the class trait spaces are shown in Extended Data Fig. 6). Standardised effect sizes used 999
 draws from an **occupancy-weighted** null model: species are drawn with
 probability proportional to their observed occupancy, holding richness fixed
 (cf. Gotelli 2000). The conventional equiprobable null treats narrow endemics
 and widespread species as exchangeable and thereby manufactures apparent trait
 clustering in endemic-rich taxa; switching to occupancy weighting moved
 amphibian SES from +1.70 to +0.08 and eliminated a spurious over-dispersion
-signal (Extended Data Fig. 8). The equiprobable null is retained as a
+signal (Extended Data Fig. 7). The resulting standardised effects are mapped in
+Extended Data Fig. 8, and the geography of assemblage trait variance in Extended Data Fig. 9. The equiprobable null is retained as a
 sensitivity analysis. Functional β-diversity was decomposed into turnover and
 nestedness (Baselga 2010; Villéger et al. 2013).
 
@@ -323,7 +311,7 @@ nestedness (Baselga 2010; Villéger et al. 2013).
 
 Responses are assemblage means of each of the six traits and each of the three
 axes, per class: 36 models. Because assemblage data are strongly spatially
-autocorrelated (Legendre 1993) and OLS residual Moran's *I* reached 0.69, we
+autocorrelated (Legendre 1993) and OLS residual Moran's *I* was 0.65–0.89 across the 36 main models (Extended Data Fig. 10; Supplementary Table 6), we
 used simultaneous autoregressive error models (Dormann et al. 2007; Kissling &
 Carl 2008) with *k* = 8 symmetrised nearest neighbours and row-standardised
 weights; SAR reduces residual Moran's *I* to between −0.055 and 0.016 across
@@ -331,7 +319,9 @@ all models (λ = 0.935–0.994). The sparse Cholesky ("Matrix") estimator was us
 because eigendecomposition is O(*n*³) at *n* ≈ 3,700; we verified it against
 the exact eigen solution on the smallest class, where coefficients agree to
 8 × 10⁻¹⁰ and log-likelihoods to 3 × 10⁻¹². Variance was partitioned among
-three hypothesis blocks (climate, habitat, human) with adjusted *R*².
+three hypothesis blocks (climate, habitat, human) with adjusted *R*². The same
+models fitted to all four moments of every trait give the full effect matrix in
+Extended Data Fig. 11.
 
 ### 2.9 Valid significance: the fourth-corner max test
 
@@ -341,7 +331,8 @@ Every trait–environment link was re-tested with the fourth-corner max test
 cells, taking the larger of the site-permutation and species-permutation
 *P*-values, with Benjamini–Hochberg correction. SAR supplies effect size and
 direction; the max test supplies significance. Naive CWM regressions were run
-on the identical matrices to quantify their Type I inflation (Zelený 2018).
+on the identical matrices to quantify their Type I inflation (Zelený 2018;
+Extended Data Fig. 12).
 
 ### 2.10 The thermal contrast and its robustness
 
@@ -362,6 +353,12 @@ predictors (Spearman correlation of log-ratio with thermal content).
 **Family-level replication.** Grid cells are not independent and classes number
 four, so the class contrast was replicated with **families** as units (mixed
 model with (1|class/order) nesting; Wilcoxon as a distribution-free check).
+Family-specific SAR models regress each family's assemblage metrics on five
+composite environmental axes — the first principal components of the thermal,
+water, productivity, habitat-structure and human-pressure variable groups
+(Extended Data Fig. 13) — rather than on the six named predictors used at the
+grid-cell level. This is why coupling was also re-operationalised on the named
+thermal variables (below).
 Families enter at ≥20 Chinese species and ≥100 occupied cells — both
 estimability requirements — retaining 33 of 166 families but 87% of ectotherm
 and 63% of endotherm species. The full pipeline was re-run at ≥10/≥50 and
@@ -372,12 +369,12 @@ The family-level responses are drawn from the fixed six-trait core computed in
 the community-metrics step, in which body size enters as body mass for every
 class so that the cross-class contrast concerns a single named quantity.
 Amphibian mass, however, is 74.7% derived allometrically from length
-(Extended Data Fig. 1), and amphibian assemblage mass and length correlate only
+(Extended Data Fig. 4), and amphibian assemblage mass and length correlate only
 *r* = 0.76 (reptiles 0.87; birds 0.98; mammals 1.00), so the choice is not
 cosmetic. We therefore re-ran the whole family-level pipeline with one size
 measure per class — length for amphibians, matching the trait protocol used for
 the functional axes and the grid-cell driver models — and report both
-(Supplementary Table 19). Only the size response changes: the Gower distance
+(Supplementary Table 7). Only the size response changes: the Gower distance
 underlying functional dispersion is computed within family, so the measures it
 contains affect all species of a family alike and do not enter the cross-class
 comparison.
@@ -389,7 +386,9 @@ Conclusions were re-checked with three hull-free functional-diversity indices
 multidimensional scaling of assemblage trait composition (*k* = 2, Euclidean on
 z-scored CWM profiles, 1,200-cell stratified subsample) followed by post hoc
 environmental vector fitting (999 permutations). The 100-km grid replicates the
-main models at a coarser grain.
+main models at a coarser grain (Extended Data Fig. 14), the thermal contrast
+was re-run leaving out each class in turn, and assemblage standardised effects
+were recomputed from species with fully observed core traits only (Extended Data Fig. 15).
 
 ### 2.12 Conservation analyses
 
@@ -405,7 +404,7 @@ saturate at ~10% of land and are unrelated to persistence (Rodrigues & Gaston
 2001; Rodrigues et al. 2004), so targets were set at **30% of each feature's
 range area**, matching Target 3. Features are species, or functional bins (each
 axis cut into six within-class quantiles, concatenated with class; 717 occupied
-bins; sensitivity at 4–8 bins in Supplementary Table 41b). A greedy algorithm
+bins; sensitivity at 4–8 bins in Supplementary Table 8). A greedy algorithm
 maximising shortfall reduction per km² was used; greedy selection carries a
 (1 − 1/e) worst-case guarantee for problems of this form (Nemhauser et al.
 1978). Species complementarity, trait-space complementarity and richness
@@ -441,8 +440,8 @@ vegan, FD, ade4 (Dray & Dufour 2007), lme4 and missForest, under a fixed seed
 
 The three *a priori* axes are near-independent within every class: SIZE–PACE
 −0.107 to 0.030, SIZE–NICHE −0.021 to 0.297, PACE–NICHE −0.197 to 0.097
-(Fig. 2; Supplementary Table 37b). Their geographies do not coincide (Fig. 3),
-and their trait–environment coefficient patterns differ (Fig. 4a). H1 is not
+(Fig. 2; Supplementary Table 9). Their geographies do not coincide (Fig. 3),
+the trait most strongly filtered in each cell is mapped in Extended Data Fig. 16, and their trait–environment coefficient patterns differ (Fig. 4a). H1 is not
 refuted.
 
 ### 3.2 Composite axes are not more sensitive than their component traits
@@ -450,7 +449,7 @@ refuted.
 Comparing each axis's mean |effect| across the six hypotheses against the mean
 of its components, six of eight class-by-axis comparisons favour the
 **components**; only amphibian PACE gains (+0.030), while reptile PACE loses
-most (−0.025) (Fig. 4c; Supplementary Table 39b). The routine "PCA first, then
+most (−0.025) (Fig. 4c; Supplementary Table 10). The routine "PCA first, then
 regress" workflow therefore **understates** trait–environment coupling. The
 value of *a priori* axes lies in giving cross-class comparison a common
 language, not in raising power. We accordingly report single traits and axes
@@ -461,12 +460,12 @@ side by side throughout.
 Climate carries the great majority of unique explanatory power in every class
 (unique adjusted *R*² 0.341 amphibians, 0.345 birds, 0.396 mammals, 0.240
 reptiles), against 0.007–0.032 for habitat and 0.005–0.032 for human pressure
-(Fig. 4b; Supplementary Table 39). Reptiles are the exception in both
-directions: the lowest climate share and the highest human share.
+(Fig. 4b; Supplementary Table 11). Reptiles are the exception in both
+directions: the lowest climate share and the highest human share (trait
+responses along the human-footprint gradient in Extended Data Fig. 17).
 
 Averaged over all responses, the ambient-energy effect is |β| = 0.169 in
-ectotherms and 0.072 in endotherms — a ratio of **2.35** (Fig. 6; Supplementary
-Table 38). Across the six hypotheses the ectotherm excess is 2.80 (human
+ectotherms and 0.072 in endotherms — a ratio of **2.35** (Fig. 4a; Supplementary Table 12). Across the six hypotheses the ectotherm excess is 2.80 (human
 pressure), 2.35 (ambient energy), 2.08 (productivity), 1.88 (seasonality), 1.30
 (water) and **1.03** (habitat heterogeneity).
 
@@ -477,7 +476,7 @@ grounds that it carries no thermal information. That control is not
 proxy-independent. Replacing within-cell elevation range with land-cover type
 diversity gives an ectotherm excess of 1.81 (95% CI 1.07–2.87), and with
 EarthEnv remote-sensing texture 0.67 (0.40–1.10), against 1.12 (0.64–1.95) for
-elevation range (Extended Data Fig. 22; Supplementary Table 45b).
+elevation range (Extended Data Fig. 18; Supplementary Table 13).
 
 Diagnosing why rescues the test. The three proxies differ greatly in how much
 temperature information they carry: |Spearman *r*| with mean annual temperature
@@ -493,16 +492,15 @@ replaces. The energy ratio itself is robust to specification (1.98–2.63; every
 
 The family-level replication is directionally consistent but weaker than the
 grid-cell result. Ectothermic families show 1.79× the thermal coupling of
-endothermic families at the main threshold (*P* = 0.017 mixed model; *P* =
+endothermic families (Fig. 5a,b) at the main threshold (*P* = 0.017 mixed model; *P* =
 0.026 Wilcoxon), 1.71× at ≥30 species (*P* = 0.049), but 1.33× and
 non-significant at ≥10 species (*P* = 0.23), where 14 additional small families
-with noisier coupling estimates enter (Extended Data Fig. 23; Supplementary
-Table 46b). An alternative operationalisation — *R*² of the three axes on named
+with noisier coupling estimates enter (Extended Data Fig. 19; Supplementary Table 14). An alternative operationalisation — *R*² of the three axes on named
 thermal variables rather than |β| on a composite thermal axis — gives 1.05. The
 contrast is, by contrast, insensitive to how body size is measured: substituting
 length for mass in amphibians — the one class where mass is mostly inferred —
 moves the thermal ratio from 1.79 to 1.77 and the overall ratio from 1.72 to
-1.67, with the Wilcoxon test significant either way (Supplementary Table 19). We
+1.67, with the Wilcoxon test significant either way (Supplementary Table 7). We
 therefore treat the grid-cell analysis as the primary evidence and the
 family-level result as directional corroboration, threshold-sensitive in the
 number of families admitted but not in how their traits are measured.
@@ -530,20 +528,22 @@ We therefore state H2 as **partially supported**: the energy asymmetry is large
 and specification-robust, and its magnitude tracks thermal content, but we
 cannot exclude that part of the ectotherm excess reflects a general difference
 in how tightly ectotherm assemblages track any environmental gradient. A design
-that could separate these — for example contrasting elevational with
-latitudinal temperature gradients at matched heterogeneity — is beyond the
-present data.
+that could separate these — contrasting elevational with latitudinal
+temperature gradients, which differ in how much non-thermal variation
+accompanies a given change in temperature — is beyond the present data.
+Matching the two on habitat heterogeneity would not achieve this, because
+heterogeneity legitimately changes along elevation; it has to be a covariate.
 
 ### 3.5 Most links survive a valid test; naive testing inflates by up to 1.72×
 
 Across 216 hypothesis × response × class tests, naive CWM regression declares
 89–98% significant; the fourth-corner max test declares 54–76% — an inflation
 of 1.27× (birds), 1.36× (mammals), 1.55× (amphibians) and 1.72× (reptiles)
-(Fig. 5b; Supplementary Table 40b). Inflation is larger in ectotherms. Of the
+(Fig. 6b; Supplementary Table 15). Inflation is larger in ectotherms. Of the
 216 tests, 140 survive, led by ambient energy (29), climatic seasonality (28)
 and water availability (26), with human pressure last (16) — the same ordering
 the SAR effect sizes give, so two statistically independent routes agree
-(Fig. 5; Supplementary Table 40c). Under SAR, 49.1% of the 216 coefficients are
+(Fig. 6; Supplementary Table 16). Under SAR, 49.1% of the 216 coefficients are
 significant after BH correction.
 
 ### 3.6 The same conclusions hold under other indices and unconstrained ordination
@@ -553,18 +553,17 @@ same six hypotheses agree in sign 83–95% of the time within each class, so the
 conclusions are not an artefact of one index. Non-metric multidimensional
 scaling of assemblage trait composition converges well in all four classes
 (stress 0.087–0.100), and post hoc environmental fitting places the strongest
-vector at *R*² = 0.72–0.87 (Extended Data Fig. 24; Supplementary Tables 47b,
-48). An unconstrained ordination therefore recovers the same gradients the
+vector at *R*² = 0.72–0.87 (Extended Data Fig. 20; Supplementary Tables 17–18). An unconstrained ordination therefore recovers the same gradients the
 constrained CWM models identify.
 
 ### 3.7 No class substitutes for another
 
 Cross-class congruence of functional regionalisations is moderate at best
 (adjusted Rand index 0.24–0.59), and the least congruent pair is
-**birds–mammals** (0.241), not birds–reptiles (0.588) (Fig. 7; Supplementary
-Table 13). The conservation-relevant asymmetry is instead functional
+**birds–mammals** (0.241), not birds–reptiles (0.588) (Fig. 7; Supplementary Table 19); cross-class correlation of functional
+dispersion is likewise highest between the two endotherm classes (Extended Data Fig. 21). The conservation-relevant asymmetry is instead functional
 redundancy: functional β relative to taxonomic β gives redundancy 0.810 in
-birds, 0.659 in mammals and **0.338** in reptiles (Supplementary Table 20). In
+birds, 0.659 in mammals and **0.338** in reptiles (Extended Data Fig. 22; Supplementary Table 20). In
 reptiles each species carries the most unique function, so species-count
 protection converts least readily into functional protection.
 
@@ -572,7 +571,7 @@ Conservation **gaps** separate the classes even more sharply. Jaccard overlap
 of gap cells is 0.315 for the two endotherm classes, 0.238 and 0.182 for
 reptiles against mammals and birds, **0.074 and 0.086** for amphibians
 against mammals and birds, and 0.160 for amphibians against reptiles
-(Supplementary Table 28). The ordering follows thermoregulatory mode: amphibian
+(Extended Data Fig. 23; Supplementary Table 21). The ordering follows thermoregulatory mode: amphibian
 gaps overlap the other ectotherm class about twice as much as they overlap
 either endotherm class — but even that is half the bird–mammal value. Looking
 at birds or mammals will not find the amphibian gaps.
@@ -580,7 +579,7 @@ at birds or mammals will not find the amphibian gaps.
 A model-free institutional correlate points the same way. Of China's 1,028
 nature reserves, 17.9% name mammals among their protection targets and 12.8%
 name birds, against 3.2% for amphibians and **1.1%** for reptiles
-(Supplementary Table 30). Consistent with this, only for mammals is assemblage
+(Supplementary Table 22). Consistent with this, only for mammals is assemblage
 trait volume positively associated with reserve coverage (+0.11); for reptiles
 it is negative (−0.05), and birds and amphibians are indistinguishable from
 zero.
@@ -589,7 +588,7 @@ zero.
 
 China's nature reserves occupy 10.36% of the land, but only **2.9%** of species
 and **1.5%** of functional bins reach 30% of range protected; an optimal layout
-of the same area reaches 50.7% and 48.0% (Fig. 8a,b; Supplementary Table 42).
+of the same area reaches 50.7% and 48.0% (Fig. 8a,b; Supplementary Table 23).
 Part of this gap reflects concentration — reserves are thinly spread across
 many cells whereas the greedy solution takes whole cells — and we do not read
 it as evidence that reserves are simply misplaced.
@@ -597,7 +596,7 @@ it as evidence that reserves are simply misplaced.
 Target currency matters most when the budget is tight. At 10% of land a
 trait-space target covers 46.7% of functional bins against 35.0% for a species
 target, and at 17% of land 62.8% against 52.9%; by 30% the two converge (92.2%
-versus 92.3%) (Supplementary Table 41). What matters at the 30% budget is
+versus 92.3%) (Supplementary Table 24). What matters at the 30% budget is
 complementarity rather than richness ranking, worth about 9 percentage points
 (86.4% versus 77.1% of species). The two currencies nevertheless place
 priorities differently: of the 30% solutions, 764 cells are shared but 377 are
@@ -606,7 +605,7 @@ third of the priority network depends on the currency (Fig. 8e).
 
 Under-protection is not random. Of twelve axis coefficients, seven are
 significant after BH correction, and their directions are interpretable
-(Fig. 8c; Supplementary Table 43). Slow-paced species are under-protected in
+(Fig. 8c; Supplementary Table 25). Slow-paced species are under-protected in
 mammals (−0.123, *P* = 5 × 10⁻⁴) and amphibians (−0.182, *P* = 6 × 10⁻⁵). The
 niche axis runs narrow to broad, so its negative coefficients in mammals
 (−0.177) and amphibians (−0.240, *P* = 5 × 10⁻¹⁶) identify **wide-ranging
@@ -622,7 +621,7 @@ Using recorded use of artificial habitat as a direct trait-level measure of
 land-use tolerance, niche breadth dominates tolerance (log-odds +2.34
 amphibians, +1.86 birds, +2.51 mammals; all *P* < 10⁻¹²), large-bodied species
 are less tolerant (−0.30 to −0.45), and pace of life is irrelevant
-(Extended Data Fig. 25; Supplementary Table 49). At the assemblage level the
+(Extended Data Fig. 24; Supplementary Table 26). At the assemblage level the
 tolerant fraction rises with human footprint (ρ = 0.37 amphibians, 0.30 birds,
 0.55 mammals) — the anthropogenic filter read off a trait rather than inferred
 from a CWM.
@@ -632,7 +631,7 @@ are the **less** protected group in all three classes with adequate coverage
 (quasi-binomial coefficient −0.445 amphibians, −0.217 birds, −0.424 mammals;
 all *P* < 2 × 10⁻⁵). Median range protected is 4.34%, 5.68% and 5.65% for
 intolerant species against 2.74%, 4.89% and 5.29% for tolerant ones
-(Supplementary Table 50). Reserves sit in remote cold high country, which is
+(Supplementary Table 27). Reserves sit in remote cold high country, which is
 where specialists are; generalists live in the human-dominated east where
 reserves are scarce. The generalist gap is therefore real but reassuring in
 direction: the species least able to persist in modified habitat are, at
@@ -688,8 +687,10 @@ variable, but its exceptions (human pressure high, water low) mark the boundary
 of what these data can attribute. Marine comparisons show ectotherms living
 closer to their thermal limits than terrestrial ones (Pinsky et al. 2019); an
 analogous within-terrestrial design — elevational versus latitudinal
-temperature gradients at matched heterogeneity — is the experiment our result
-sets up. Meanwhile the applied implication is not hostage to mechanism:
+temperature gradients, contrasted by how much non-thermal variation accompanies
+each — is the experiment our result sets up. Local coupling estimates, which
+could in principle map where the asymmetry is strongest, are attenuated in
+species-poor cells and are reported only as a diagnostic (Extended Data Fig. 25). Meanwhile the applied implication is not hostage to mechanism:
 whatever its ultimate cause, ectotherm assemblage composition is the more
 climate-exposed, and warming should reorganise it faster.
 
@@ -760,8 +761,7 @@ conservation outcome equivalent to protection.
 4. **Only nature reserves are included**, not national parks or other
    categories, so coverage is a lower bound on China's protected-area system
    (cf. Xu et al. 2017).
-5. **Ectotherm life-history values are substantially imputed.** Supplementary
-   Table 36 gives observed fractions trait by trait; traits below 30% observed
+5. **Ectotherm life-history values are substantially imputed.** Supplementary Table 4 gives observed fractions trait by trait; traits below 30% observed
    are excluded from core analyses. Generation length remains unavailable for
    both ectotherm classes and is the single largest remaining data gap.
 6. **The family-level thermal contrast is threshold-sensitive** (§3.4) and
@@ -825,7 +825,7 @@ environment than in an ectothermic one; coupling strength is the slope of assemb
 composition on the environmental gradient (bars at right). **b**, Species analysed per
 class on the 50-km equal-area grid: 1,177 birds, 631 mammals, 520 reptiles and 509
 amphibians, 2,837 in total across 3,782 analysable cells. **c–f**, Species richness of each
-class. Grey cells hold no species of that class.
+class. Grey cells hold fewer than two species of that class; they are not absences.
 
 ### Fig. 2 | Three *a priori* functional axes and their independence
 
@@ -837,7 +837,9 @@ Pace of life is the negative residual of fecundity on body size, and is therefor
 to size by construction. **b**, Spearman correlations between axis pairs within each class.
 All |*r*| ≤ 0.30 (maximum 0.297, size–niche in reptiles), so the axes carry separate
 information. **c–f**, The fecundity–size relationship from which the pace axis is built,
-one panel per class, with the Spearman correlation of the *residuals* against size shown.
+one panel per class, with its raw Spearman correlation — strongly positive only in
+reptiles (ρ = +0.67). The pace axis is the residual of this relationship, so it is
+uncorrelated with size whatever the raw correlation.
 
 ### Fig. 3 | Geography of assemblage trait means across China
 
@@ -845,7 +847,7 @@ Community-weighted means of three traits — body size (**a–d**), habitat brea
 and nocturnality (**i–l**) — for birds, mammals, reptiles and amphibians on the 50-km grid.
 Each row shares one colour scale. Body size uses one measure per class: body mass for birds,
 mammals and reptiles, body length for amphibians, whose mass is 74.7% derived allometrically
-from length (Extended Data Fig. 1). Because traits are standardised within class before the
+from length (Extended Data Fig. 4). Because traits are standardised within class before the
 moments are computed, panels remain comparable despite the different underlying measures.
 Blank cells hold fewer than five species of that class, so assemblage moments are not
 estimable there; **they are not absences**. Cells mapped: birds 100%, mammals 100%, reptiles
@@ -865,7 +867,27 @@ of the component traits against that of the composite axis they form. In six of 
 comparisons the composite is *weaker* than its components, so combining traits into an axis
 dilutes rather than concentrates the environmental signal.
 
-### Fig. 5 | Fourth-corner max test of trait–environment links
+### Fig. 5 | Endotherms and ectotherms differ in trait–environment coupling
+
+**a**, Coupling strength — the mean absolute standardised environmental effect — for each of
+33 families that meet the inclusion thresholds (≥20 Chinese species and ≥100 occupied cells),
+coloured by class, with boxes summarising the two thermoregulatory modes. Ectotherm families
+are 1.72× more tightly coupled (Wilcoxon *P* = 0.019). **b**, The same contrast resolved by
+environmental axis. Ectotherm families have the higher mean coupling on all five
+axes, by the smallest margin for water availability, where the two medians are
+similar. Greyscale distinguishes the
+thermoregulatory modes so that no colour means both a class and a mode within this figure.
+**c**, Family-level effect of thermal energy on the community-weighted mean of body mass
+(point estimate ± 95% CI), the single strongest contrast. Body mass is used for all four
+classes here so that the cross-class comparison concerns one named quantity; substituting
+length for mass in amphibians — the only class where mass is mostly inferred — moves the
+overall ratio from 1.72 to 1.67 and the thermal ratio from 1.79 to 1.77 (Supplementary Table 7).
+
+*Families are the replicate unit because classes provide only two replicates per
+thermoregulatory mode and grid cells are pseudoreplicated. Estimates come from
+family-specific spatial autoregressive error models on the 50-km grid.*
+
+### Fig. 6 | Fourth-corner max test of trait–environment links
 
 **a**, Signed fourth-corner statistic for every trait × predictor combination, by class. Dots
 mark links that survive the max test (`modeltype = 6`, which permutes sites and species
@@ -879,25 +901,6 @@ naively against 53.7–75.9% under the valid test, an inflation of 1.27× (birds
 axes and expressed as proportions because the two have different denominators (24 tests per
 trait bar, 12 per axis bar).
 
-### Fig. 6 | Endotherms and ectotherms differ in trait–environment coupling
-
-**a**, Coupling strength — the mean absolute standardised environmental effect — for each of
-33 families that meet the inclusion thresholds (≥20 Chinese species and ≥100 occupied cells),
-coloured by class, with boxes summarising the two thermoregulatory modes. Ectotherm families
-are 1.72× more tightly coupled (Wilcoxon *P* = 0.019). **b**, The same contrast resolved by
-environmental axis; ectotherms exceed endotherms on every axis. Greyscale distinguishes the
-thermoregulatory modes so that no colour means both a class and a mode within this figure.
-**c**, Family-level effect of thermal energy on the community-weighted mean of body mass
-(point estimate ± 95% CI), the single strongest contrast. Body mass is used for all four
-classes here so that the cross-class comparison concerns one named quantity; substituting
-length for mass in amphibians — the only class where mass is mostly inferred — moves the
-overall ratio from 1.72 to 1.67 and the thermal ratio from 1.79 to 1.77 (Supplementary
-Table 19).
-
-*Families are the replicate unit because classes provide only two replicates per
-thermoregulatory mode and grid cells are pseudoreplicated. Estimates come from
-family-specific spatial autoregressive error models on the 50-km grid.*
-
 ### Fig. 7 | No single class is a reliable surrogate for another
 
 **a–c**, *k*-means partition of grid cells on their profile of trait-moment standardised
@@ -908,8 +911,10 @@ south-east division agreeing with it in 76–78% of cells. Mammals additionally 
 Tibetan Plateau and the north-east. **d**, Adjusted Rand index between class-specific
 partitions. The bracketed value forces every class to two regions, which separates
 "a different boundary" from "a different number of regions". **e**, Cluster centres, giving
-each region an interpretable trait signature. Amphibians are omitted because too few cells
-pass the five-species threshold for a stable partition (Fig. 3).
+each region an interpretable trait signature. Amphibians are omitted: two of the six traits in
+the profile, body mass and nocturnality, are observed for only 8% and 11% of
+amphibian species (Supplementary Table 28), so an amphibian partition would
+largely reflect imputed values.
 
 ### Fig. 8 | Conservation design: complementarity, under-protected traits and 30 × 30
 
@@ -921,7 +926,9 @@ selections. The existing reserve network (orange point) covers 10.36% of land an
 reaches 48.0% and 50.7%. **c**, Effect of each functional axis on the protected fraction of a
 species' range (quasi-binomial GLM weighted by range area, controlling range size). Negative
 means the high end of that axis is under-protected. Body size reverses between mammals
-(+0.283) and reptiles (−0.308); slow pace and broad niche are under-protected consistently.
+(+0.283) and reptiles (−0.308). Slow pace is under-protected in mammals and
+amphibians; broad niches are under-protected in mammals and amphibians but better
+protected in reptiles (+0.211).
 Note that the niche axis runs narrow → broad, so its negative coefficients identify
 **wide-ranging generalists**, not specialists. Asterisks mark BH-adjusted *P* < 0.05.
 **d**, Percentage of species reaching the 30%-of-range target under the current network and
@@ -932,7 +939,21 @@ species and trait-space targets, and their overlap.
 
 ## Extended Data figure legends
 
-**ED 1 | Trait coverage and imputation.** **a**, Observed coverage of each core and extended
+**ED 1 | Data-driven trait axes retained as a check on the *a priori* axes.** Free
+within-class principal components, shown to document how far the leading data-driven axis
+differs in meaning between classes, which is the reason the main analysis fixes the axes
+*a priori*.
+
+**ED 2 | Occurrence records versus expert range maps.** Chao sample coverage per cell from
+GBIF/eBird records; richness from occurrences against richness from range maps; and the
+standardised effect of human pressure on assemblage metrics fitted to range-map assemblages,
+occurrence assemblages, and occurrence assemblages with coverage as a covariate.
+
+**ED 3 | Occurrence-based assemblages for all four classes.** Chao coverage per class, and
+the human-pressure effect under four settings, including the decisive "range map, same cells"
+control that separates a data-source effect from a cell-selection effect.
+
+**ED 4 | Trait coverage and imputation.** **a**, Observed coverage of each core and extended
 trait before imputation. **b**, Assignment of traits to the core set (complete in all four
 classes), the extended set (birds, mammals and reptiles only) and the excluded set
 (data-deficient). **c**, Values already imputed upstream by TetrapodTraits, using the flags
@@ -940,33 +961,16 @@ supplied there — including the 74.7% of amphibian body masses derived allometr
 **d**, Out-of-bag error of the missForest imputation, which included the ten leading
 phylogenetic eigenvectors as predictors.
 
-**ED 2 | Trait space and its principal coordinates.** Principal-coordinate ordination of the
+**ED 5 | Sexual size dimorphism across assemblages.** Species-level dimorphism from the
+Chinese trait compilations, and its assemblage-level geography. Reptile dimorphism comes
+entirely from the snake dataset — the lizard compilation does not separate the sexes — and is
+labelled as snakes rather than reptiles throughout.
+
+**ED 6 | Trait space and its principal coordinates.** Principal-coordinate ordination of the
 Gower distance among the core traits, one panel per class. Arrows are trait–axis correlations;
 percentages are variance explained.
 
-**ED 3 | Environmental predictors and their axes.** Loadings of individual variables on each
-ecological axis, the spatial pattern of each axis on the 50-km grid, and the correlations
-among axes confirming that axis construction removed the collinearity present among the raw
-variables.
-
-**ED 4 | Spatial model diagnostics.** Moran's *I* of ordinary-least-squares residuals (up to
-0.69, significant in every model, which is why spatial models are required); the fitted
-autoregressive parameter λ; and the AIC improvement over ordinary least squares. Residual
-Moran's *I* after correction falls to −0.055 to 0.016.
-
-**ED 5 | Full trait-by-predictor effect matrix.** Standardised effects of every predictor on
-every moment (mean, variance, skewness, kurtosis) of every analysed trait, by class. Dots mark
-BH-adjusted *P* < 0.05.
-
-**ED 6 | Type I error inflation of naive CWM regression.** Fourth-corner statistics by class;
-naive against max-test *P* values, where points in the lower-right quadrant are links the
-naive test calls significant and the valid test does not; and the resulting inflation ratio.
-
-**ED 7 | Robustness to grain: 100 km results.** The main assemblage results replicated on the
-100-km grid, with a cell-wise comparison between grains exploiting the exact nesting of the
-50-km grid within the 100-km grid.
-
-**ED 8 | Null-model behaviour under occupancy weighting.** Standardised effect size against
+**ED 7 | Null-model behaviour under occupancy weighting.** Standardised effect size against
 species richness — a flat relationship indicates the richness-constrained null has removed
 the metric's mechanical dependence on richness — with observed values for comparison. Species
 are drawn with probability proportional to occupancy rather than equiprobably; the
@@ -975,73 +979,50 @@ manufactures apparent trait clustering in endemic-rich taxa. Moving to occupancy
 changed the amphibian standardised effect from +1.70 to +0.08 and removed an apparent
 over-dispersion signal.
 
-**ED 9 | Additional robustness checks.** Ectotherm-to-endotherm coupling ratio when each class
-is dropped in turn; mean standardised effect computed from all species against only those with
-fully observed core traits; and the percentage of species per class with fully observed traits.
-
-**ED 10 | Standardised effect sizes of functional diversity.** Functional dispersion relative
+**ED 8 | Standardised effect sizes of functional diversity.** Functional dispersion relative
 to the occupancy-weighted null for each class, and its response to mean annual temperature and
 to human footprint.
 
-**ED 11 | The anthropogenic filter on assemblage traits.** Human Footprint on the 50-km grid,
-and the community-weighted mean, variance and skewness of body size along that gradient, by
-class.
-
-**ED 12 | Grain sensitivity and cross-class congruence.** Distribution of standardised effect
-sizes at 50 and 100 km, and the cross-class correlations of functional dispersion. Congruence
-is highest between the two endotherm classes.
-
-**ED 13 | Geography of assemblage trait variance.** Standardised effect of community-weighted
+**ED 9 | Geography of assemblage trait variance.** Standardised effect of community-weighted
 trait *variance*, the correlation between the mean's and the variance's effect sizes for each
 trait, and a filtering-regime map classifying cells by the signs of both.
 
-**ED 14 | Which trait is most strongly filtered, mapped.** For each cell, the core trait with
+**ED 10 | Spatial model diagnostics.** Moran's *I* of ordinary-least-squares residuals (0.65–0.89
+across the 36 main models, *P* < 0.001 in every one, which is why spatial models are
+required; Supplementary Table 6); the fitted
+autoregressive parameter λ; and the AIC improvement over ordinary least squares. Residual
+Moran's *I* after correction falls to −0.055 to 0.016.
+
+**ED 11 | Full trait-by-predictor effect matrix.** Standardised effects of every predictor on
+every moment (mean, variance, skewness, kurtosis) of every analysed trait, by class. Dots mark
+BH-adjusted *P* < 0.05.
+
+**ED 12 | Type I error inflation of naive CWM regression.** Fourth-corner statistics by class;
+naive against max-test *P* values, where points in the lower-right quadrant are links the
+naive test calls significant and the valid test does not; and the resulting inflation ratio.
+
+**ED 13 | Environmental predictors and their axes.** Loadings of individual variables on each
+ecological axis, the spatial pattern of each axis on the 50-km grid, and the correlations
+among axes confirming that axis construction removed the collinearity present among the raw
+variables.
+
+**ED 14 | Robustness to grain: 100 km results.** The main assemblage results replicated on the
+100-km grid, with a cell-wise comparison between grains exploiting the exact nesting of the
+50-km grid within the 100-km grid.
+
+**ED 15 | Additional robustness checks.** Ectotherm-to-endotherm coupling ratio when each class
+is dropped in turn; mean standardised effect computed from all species against only those with
+fully observed core traits; and the percentage of species per class with fully observed traits.
+
+**ED 16 | Which trait is most strongly filtered, mapped.** For each cell, the core trait with
 the largest absolute standardised effect of its community-weighted mean; the composition of
 dominant traits overall; and the same composition within deciles of the thermal-energy axis.
 
-**ED 15 | Geographically weighted trait–environment coupling.** Local coupling estimated in a
-moving window of the 200 nearest cells, its difference between reptiles and the endotherm
-mean, and a diagnostic of local coupling against cell richness.
+**ED 17 | The anthropogenic filter on assemblage traits.** Human Footprint on the 50-km grid,
+and the community-weighted mean, variance and skewness of body size along that gradient, by
+class.
 
-> These local estimates must not be read against Fig. 6. The family-level analysis is free of
-> the attenuation shown in the diagnostic panel; the local estimates are not. The maps are
-> reported as a description of spatial heterogeneity, the diagnostic as a methodological
-> caution, not as a biological contrast.
-
-**ED 16 | Functional beta diversity and its turnover component.** Sørensen beta diversity
-between adjacent cell pairs, decomposed following Baselga, computed for species and for
-functional groups; functional against taxonomic beta diversity, whose vertical distance below
-the 1:1 line is functional redundancy; and the share of beta diversity attributable to
-turnover rather than nestedness.
-
-**ED 17 | Occurrence records versus expert range maps.** Chao sample coverage per cell from
-GBIF/eBird records; richness from occurrences against richness from range maps; and the
-standardised effect of human pressure on assemblage metrics fitted to range-map assemblages,
-occurrence assemblages, and occurrence assemblages with coverage as a covariate.
-
-**ED 18 | Occurrence-based assemblages for all four classes.** Chao coverage per class, and
-the human-pressure effect under four settings, including the decisive "range map, same cells"
-control that separates a data-source effect from a cell-selection effect.
-
-**ED 19 | Conservation gaps and reserve representation.** Based on China's 1,028 designated
-nature reserves; other protected-area categories are excluded, so coverage is a lower bound.
-Reserve coverage and distance to the nearest reserve; conservation-gap cells for each of the
-four classes; the effect of assemblage trait volume on reserve coverage from spatial models
-controlling the environmental axes; Jaccard overlap of gap cells between classes; and the
-percentage of reserves whose designation record names each class as a protection target
-(mammals 17.9%, birds 12.8%, amphibians 3.2%, reptiles 1.1%).
-
-**ED 20 | Sexual size dimorphism across assemblages.** Species-level dimorphism from the
-Chinese trait compilations, and its assemblage-level geography. Reptile dimorphism comes
-entirely from the snake dataset — the lizard compilation does not separate the sexes — and is
-labelled as snakes rather than reptiles throughout.
-
-**ED 21 | Data-driven trait axes retained as a check on the *a priori* axes.** Free
-within-class principal components, shown to document how far the leading data-driven axis
-differs in meaning between classes, which is the reason the main analysis fixes the axes
-*a priori*.
-
-**ED 22 | Three ways of measuring habitat heterogeneity, and the dose–response with thermal
+**ED 18 | Three ways of measuring habitat heterogeneity, and the dose–response with thermal
 content.** **a**, Ectotherm/endotherm effect ratio for ambient energy and for habitat
 heterogeneity under three heterogeneity proxies (topographic elevation range, land-cover type
 diversity, EarthEnv remote-sensing texture). The energy ratio is stable at 1.98–2.63; the
@@ -1053,23 +1034,50 @@ Spearman ρ = 0.74, *P* = 0.037. The single heterogeneity proxy that shows an ec
 is the one most strongly correlated with temperature — it is a disguised thermal variable,
 which is why the single negative control failed and was replaced by a trend test.
 
-**ED 23 | Which families enter the clade-level test, and how the threshold changes it.**
+**ED 19 | Which families enter the clade-level test, and how the threshold changes it.**
 Family inclusion under three threshold pairs and the resulting ectotherm/endotherm ratio:
 1.79× at the main threshold (*P* = 0.017), 1.71× at ≥30 species (*P* = 0.049), and 1.33× and
 non-significant at ≥10 species (*P* = 0.23), where 14 additional small families with noisier
 coupling estimates enter.
 
-**ED 24 | Functional-diversity indices and unconstrained NMDS ordination.** Functional
+**ED 20 | Functional-diversity indices and unconstrained NMDS ordination.** Functional
 evenness, dispersion and Rao's quadratic entropy against the same six hypotheses, showing that
 the sign of the effect is consistent across indices; and non-metric multidimensional scaling
 of assemblage trait composition with environmental vectors fitted afterwards. Functional
 richness is not shown: the convex-hull computation does not scale to the species numbers here.
 
-**ED 25 | Land-use tolerance: which traits tolerate modification, and are they the protected
+**ED 21 | Grain sensitivity and cross-class congruence.** Distribution of standardised effect
+sizes at 50 and 100 km, and the cross-class correlations of functional dispersion. Congruence
+is highest between the two endotherm classes.
+
+**ED 22 | Functional beta diversity and its turnover component.** Sørensen beta diversity
+between adjacent cell pairs, decomposed following Baselga, computed for species and for
+functional groups; functional against taxonomic beta diversity, whose vertical distance below
+the 1:1 line is functional redundancy; and the share of beta diversity attributable to
+turnover rather than nestedness.
+
+**ED 23 | Conservation gaps and reserve representation.** Based on China's 1,028 designated
+nature reserves; other protected-area categories are excluded, so coverage is a lower bound.
+Reserve coverage and distance to the nearest reserve; conservation-gap cells for each of the
+four classes; the effect of assemblage trait volume on reserve coverage from spatial models
+controlling the environmental axes; Jaccard overlap of gap cells between classes; and the
+percentage of reserves whose designation record names each class as a protection target
+(mammals 17.9%, birds 12.8%, amphibians 3.2%, reptiles 1.1%).
+
+**ED 24 | Land-use tolerance: which traits tolerate modification, and are they the protected
 ones.** Species-level tolerance of artificial habitat against the three functional axes;
 assemblage-mean tolerance against human footprint; and protected fraction against tolerance.
 
 ---
+
+**ED 25 | Geographically weighted trait–environment coupling.** Local coupling estimated in a
+moving window of the 200 nearest cells, its difference between reptiles and the endotherm
+mean, and a diagnostic of local coupling against cell richness.
+
+> These local estimates must not be read against Fig. 5. The family-level analysis is free of
+> the attenuation shown in the diagnostic panel; the local estimates are not. The maps are
+> reported as a description of spatial heterogeneity, the diagnostic as a methodological
+> caution, not as a biological contrast.
 
 
 ## References

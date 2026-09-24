@@ -41,9 +41,9 @@ MAIN <- rbind(
              title = "Geography of assemblage trait means across China"),
   data.frame(num = "Fig4", src = "Fig4_hypothesis_drivers", question = Q2,
              title = "Which biodiversity hypothesis drives assemblage trait structure"),
-  data.frame(num = "Fig5", src = "Fig5_fourth_corner", question = Q2,
+  data.frame(num = "Fig6", src = "Fig5_fourth_corner", question = Q2,
              title = "Fourth-corner max test of trait-environment links"),
-  data.frame(num = "Fig6", src = "Fig4_thermal_mode_asymmetry", question = Q2,
+  data.frame(num = "Fig5", src = "Fig4_thermal_mode_asymmetry", question = Q2,
              title = "Endotherms and ectotherms differ in trait-environment coupling"),
   data.frame(num = "Fig7", src = "Fig9_functional_regionalisation", question = Q3,
              title = "No single class is a reliable surrogate: functional regions and redundancy differ"),
@@ -51,55 +51,55 @@ MAIN <- rbind(
              title = "Conservation design: complementarity, under-protected traits and 30x30"))
 
 ED <- rbind(
-  data.frame(num = "ED1", src = "ED1_trait_coverage_imputation",
+  data.frame(num = "ED4", src = "ED1_trait_coverage_imputation",
              title = "Trait coverage before and after imputation"),
-  data.frame(num = "ED2", src = "ED2_trait_space_pcoa",
+  data.frame(num = "ED6", src = "ED2_trait_space_pcoa",
              title = "Trait space and its principal coordinates"),
-  data.frame(num = "ED3", src = "ED3_environmental_axes",
+  data.frame(num = "ED13", src = "ED3_environmental_axes",
              title = "Environmental predictors and their axes"),
-  data.frame(num = "ED4", src = "ED4_spatial_model_diagnostics",
+  data.frame(num = "ED10", src = "ED4_spatial_model_diagnostics",
              title = "Spatial model diagnostics"),
-  data.frame(num = "ED5", src = "ED5_effect_heatmap_all",
+  data.frame(num = "ED11", src = "ED5_effect_heatmap_all",
              title = "Full trait-by-predictor effect matrix"),
-  data.frame(num = "ED6", src = "ED6_fourthcorner_typeI",
+  data.frame(num = "ED12", src = "ED6_fourthcorner_typeI",
              title = "Type I error inflation of naive CWM regression"),
-  data.frame(num = "ED7", src = "ED7_grain_robustness_100km",
+  data.frame(num = "ED14", src = "ED7_grain_robustness_100km",
              title = "Robustness to grain: 100 km results"),
-  data.frame(num = "ED8", src = "ED8_null_model_behaviour",
+  data.frame(num = "ED7", src = "ED8_null_model_behaviour",
              title = "Null-model behaviour under occupancy weighting"),
-  data.frame(num = "ED9", src = "ED9_robustness_checks",
+  data.frame(num = "ED15", src = "ED9_robustness_checks",
              title = "Additional robustness checks"),
-  data.frame(num = "ED10", src = "Fig3_SES_functional_diversity",
+  data.frame(num = "ED8", src = "Fig3_SES_functional_diversity",
              title = "Standardised effect sizes of functional diversity"),
-  data.frame(num = "ED11", src = "Fig5_anthropogenic_filter",
+  data.frame(num = "ED17", src = "Fig5_anthropogenic_filter",
              title = "The anthropogenic filter on assemblage traits"),
-  data.frame(num = "ED12", src = "Fig6_scale_and_congruence",
+  data.frame(num = "ED21", src = "Fig6_scale_and_congruence",
              title = "Grain sensitivity and cross-class congruence"),
-  data.frame(num = "ED13", src = "Fig7_trait_variance_geography",
+  data.frame(num = "ED9", src = "Fig7_trait_variance_geography",
              title = "Geography of assemblage trait variance"),
-  data.frame(num = "ED14", src = "Fig8_dominant_filtered_trait",
+  data.frame(num = "ED16", src = "Fig8_dominant_filtered_trait",
              title = "Which trait is most strongly filtered, mapped"),
-  data.frame(num = "ED15", src = "Fig10_geographically_weighted_coupling",
+  data.frame(num = "ED25", src = "Fig10_geographically_weighted_coupling",
              title = "Geographically weighted trait-environment coupling"),
-  data.frame(num = "ED16", src = "Fig11_functional_beta",
+  data.frame(num = "ED22", src = "Fig11_functional_beta",
              title = "Functional beta diversity and its turnover component"),
-  data.frame(num = "ED17", src = "Fig12_occurrence_vs_rangemap",
+  data.frame(num = "ED2", src = "Fig12_occurrence_vs_rangemap",
              title = "Occurrence records versus expert range maps"),
-  data.frame(num = "ED18", src = "Fig13_occurrence_four_classes",
+  data.frame(num = "ED3", src = "Fig13_occurrence_four_classes",
              title = "Occurrence-based assemblages for all four classes"),
-  data.frame(num = "ED19", src = "Fig14_conservation_gaps",
+  data.frame(num = "ED23", src = "Fig14_conservation_gaps",
              title = "Conservation gaps and reserve representation"),
-  data.frame(num = "ED20", src = "Fig15_sexual_dimorphism",
+  data.frame(num = "ED5", src = "Fig15_sexual_dimorphism",
              title = "Sexual size dimorphism across assemblages"),
-  data.frame(num = "ED21", src = "Fig2_trait_axes",
+  data.frame(num = "ED1", src = "Fig2_trait_axes",
              title = "Data-driven trait axes retained as a check on the a priori axes"),
-  data.frame(num = "ED22", src = "Fig6b_negative_control",
+  data.frame(num = "ED18", src = "Fig6b_negative_control",
              title = "Three ways of measuring habitat heterogeneity, and the dose-response with thermal content"),
-  data.frame(num = "ED23", src = "Fig6c_family_threshold",
+  data.frame(num = "ED19", src = "Fig6c_family_threshold",
              title = "Which families enter the clade-level test, and how the threshold changes it"),
-  data.frame(num = "ED24", src = "Fig9_fd_and_nmds",
+  data.frame(num = "ED20", src = "Fig9_fd_and_nmds",
              title = "Functional-diversity indices and unconstrained NMDS ordination"),
-  data.frame(num = "ED25", src = "Fig10_landuse_tolerance",
+  data.frame(num = "ED24", src = "Fig10_landuse_tolerance",
              title = "Land-use tolerance: which traits tolerate modification, and are they the protected ones"))
 
 copy_set <- function(tab, dest) {
@@ -119,6 +119,14 @@ copy_set <- function(tab, dest) {
   }
   ok
 }
+
+# 编号按正文首次引用顺序分配（Nature 系列要求），由 09_submission/renumber_apply.py
+# 生成映射；此处按新编号排序，并先清空输出目录，避免旧编号文件残留。
+# Numbers follow order of first citation; sort and clear stale outputs first.
+num_key <- function(x) as.integer(sub("^(Fig|ED)", "", x))
+MAIN <- MAIN[order(num_key(MAIN$num)), ]
+ED   <- ED[order(num_key(ED$num)), ]
+unlink(list.files(DIR_MAIN, full.names = TRUE)); unlink(list.files(DIR_ED, full.names = TRUE))
 
 MAIN$found <- copy_set(MAIN, DIR_MAIN)
 ED$found   <- copy_set(ED, DIR_ED)

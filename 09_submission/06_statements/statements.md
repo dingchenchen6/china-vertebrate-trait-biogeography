@@ -9,7 +9,7 @@ before submission; nothing in them has been guessed.
 
 The aggregated data underlying every figure and table in this paper — per-cell assemblage
 metrics, community-weighted trait moments, functional-axis scores, model coefficients and
-all 97 result tables — are available at
+all result tables — are available at
 https://github.com/dingchenchen6/china-vertebrate-trait-biogeography and archived at
 [Zenodo DOI to be minted from the GitHub release].
 
@@ -33,13 +33,14 @@ with the Chinese trait datasets cited in Methods §2.3. Each is cited in the ref
 and in `DATA.md`.
 
 Source data for each main-text figure are provided in the repository under
-`04_results/tables/`, indexed by `table_00_figure_manifest.csv`.
+`04_results/tables/`, indexed by `table_00_figure_manifest.csv`; the Supplementary
+Tables workbook reproduces, in order of citation, every table the manuscript cites.
 
 ## Code availability
 
 All analysis code is available at
 https://github.com/dingchenchen6/china-vertebrate-trait-biogeography and archived at
-[Zenodo DOI]. The pipeline is written in R [4.5.1] and runs end to end from the raw public
+[Zenodo DOI]. The pipeline is written in R 4.5.1 and runs end to end from the raw public
 sources to every figure and table. The random seed is fixed at 20260801; each script
 carries a bilingual header stating its scientific question, inputs, workflow, outputs and
 key assumptions. Principal packages: sf, terra, spdep, spatialreg, vegan, FD, ade4, lme4,
