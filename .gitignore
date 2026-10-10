@@ -58,3 +58,17 @@ Rplots.pdf
 # Submission figures are renamed copies of 05_figures/; regenerate with assemble_figures.R
 09_submission/03_main_figures/
 09_submission/04_extended_data/
+
+# 两刊投稿包中的图件、预览图与内嵌图片的补充信息文档均为生成产物
+# （09_submission/build_journal_packages.py 可重建），完整版存于私密仓库
+# Generated binaries of the NatCommun/GEB packages; full copies live in the private repo
+10_submission_NatCommun/03_figures/
+10_submission_NatCommun/04_supplementary/figures/
+10_submission_NatCommun/04_supplementary/preview/
+10_submission_NatCommun/04_supplementary/Supplementary_Information.docx
+10_submission_NatCommun/.build/
+11_submission_GEB/03_figures/
+11_submission_GEB/04_supporting_information/figures/
+11_submission_GEB/04_supporting_information/preview/
+11_submission_GEB/04_supporting_information/Appendix_S1_Figures_S1-S25.docx
+11_submission_GEB/.build/

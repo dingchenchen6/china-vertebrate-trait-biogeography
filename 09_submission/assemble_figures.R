@@ -20,13 +20,32 @@ dirs <- c(Main = "09_submission/03_main_figures",
           `Extended Data` = "09_submission/04_extended_data")
 for (d in dirs) dir.create(d, recursive = TRUE, showWarnings = FALSE)
 
+# 硬链接防护：若目标文件恰是源文件的硬链接，就地覆盖或清理目标会连带改写分析原图。
+# 2026-10 曾发生过：投稿包图件与 05_figures 原图共享 inode，对投稿包运行 wm-clean
+# 时连带改写了原图的元数据。因此先删除目标再复制，并校验目标的硬链接数为 1。
+# Hard-link guard: writing to a target that shares an inode with its source would
+# rewrite the source. Unlink first, copy, then assert the target has one link.
+nlink <- function(p) {
+  for (args in list(c("-f", "%l"), c("-c", "%h"))) {
+    out <- suppressWarnings(tryCatch(
+      system2("stat", c(args, shQuote(p)), stdout = TRUE, stderr = FALSE),
+      error = function(e) character(0)))
+    if (length(out) && grepl("^[0-9]+$", out[1])) return(as.integer(out[1]))
+  }
+  NA_integer_
+}
+
 n <- 0L; missing <- character(0)
 for (i in seq_len(nrow(man))) {
   dest <- dirs[[man$panel[i]]]
   for (ext in c("pdf", "png")) {
     src <- file.path("05_figures", paste0(man$src[i], ".", ext))
     if (file.exists(src)) {
-      file.copy(src, file.path(dest, paste0(man$num[i], ".", ext)), overwrite = TRUE)
+      dest_f <- file.path(dest, paste0(man$num[i], ".", ext))
+      if (file.exists(dest_f)) unlink(dest_f)          # 先删除，断开可能存在的硬链接
+      file.copy(src, dest_f)
+      k <- nlink(dest_f)
+      if (!is.na(k) && k > 1L) stop("目标文件与他处共享 inode / shared inode: ", dest_f)
       n <- n + 1L
     } else missing <- c(missing, src)
   }
