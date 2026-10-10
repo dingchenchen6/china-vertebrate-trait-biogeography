@@ -49,8 +49,9 @@ Rscript --vanilla 09_submission/assemble_figures.R       # 装配进投稿包
 - 连续量用 `batlow`、发散量用 `vik`（Crameri 感知均匀、色觉障碍友好）
 - 地图为中国 Albers 等积圆锥投影，南海诸岛按真实地理位置绘制，十段线为独立图层
 
-## 提交前必须补的四项
+## 提交前必须补的五项
 
+0. **AI 使用披露** — 逐项确认 `06_statements/AI_use_disclosure.md`，改定手稿方法部分 2.14 节
 1. **Zenodo DOI** — 从 GitHub release 铸造，填入投稿信与两处可得性声明
 2. **资助信息** — 若无专项资助也要明确写出
 3. **ORCID**

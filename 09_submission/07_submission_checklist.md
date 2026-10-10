@@ -60,6 +60,7 @@ vertebrate assemblage traits and conservation gaps*。
 
 ## 六、作者须补
 
+- ⬜ **AI 使用披露**：逐项确认 `06_statements/AI_use_disclosure.md`，改定手稿方法部分 2.14 节方括号内容并删去提示（Nature Portfolio 要求在 Methods 中披露 LLM 使用）
 - ⬜ **资助信息**（若无专项资助也须明确写出）
 - ⬜ ORCID
 - ⬜ 推荐审稿人 3–5 位（逐一排查利益冲突）；回避审稿人（如有）

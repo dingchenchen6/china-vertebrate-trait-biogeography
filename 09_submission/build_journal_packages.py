@@ -248,13 +248,12 @@ def build_natcommun(P, out='10_submission_NatCommun'):
     K = kinds('Supplementary')
     data, code = statements()
     title = read(f'{TEXT}/natcommun_title.txt').strip()
-    ai = read(f'{TEXT}/natcommun_ai_methods.md').strip()
 
     rename = lambda t: re.sub(r'Extended(\s+)Data(\s+)Fig', r'Supplementary\2Fig', t)
     intro, results, discussion, methods = (rename(denumber(P[k])) for k in
                                            ('intro', 'results', 'discussion', 'methods'))
     data, code = rename(data), rename(code)
-    methods = methods + '\n\n### Use of AI tools\n\n' + ai
+    # 主稿方法部分已含「Use of AI tools」小节（Nature Portfolio 要求在 Methods 中披露）
 
     body = '\n\n'.join([
         '## Introduction\n\n' + intro, '## Results\n\n' + results,
@@ -363,6 +362,7 @@ def build_geb(P, out='11_submission_GEB'):
     ai = read(f'{TEXT}/geb_ai_placeholder.md').strip()
     intro, methods, results, discussion = (denumber(P[k]) for k in
                                            ('intro', 'methods', 'results', 'discussion'))
+    methods = re.sub(r'\n### Use of AI tools\n.*\Z', '', methods, flags=re.S).rstrip()   # Wiley 披露另设一节
     body = '\n\n'.join(['## Introduction\n\n' + intro, '## Methods\n\n' + methods,
                         '## Results\n\n' + results, '## Discussion\n\n' + discussion])
     # GEB 的章节顺序与主稿一致，编号应当不变——核验，而不是假定
